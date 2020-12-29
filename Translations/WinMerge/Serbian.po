@@ -43,9 +43,8 @@ msgstr ""
 msgid "Copy fro&m Right"
 msgstr ""
 
-#, c-format
-msgid "&Select Line Difference"
-msgstr "&Изабери различите редове"
+msgid "&Select Line Difference\tF4"
+msgstr "&Изабери различите редове\tF4"
 
 #, c-format
 msgid "&Undo"
@@ -67,9 +66,14 @@ msgstr "&Умножи"
 msgid "&Paste"
 msgstr "&Налепи"
 
-#, c-format
-msgid "&Goto..."
-msgstr "&Иди на..."
+msgid "&Go to...\tCtrl+G"
+msgstr "&Иди на...\tCtrl+G"
+
+msgid "Go to Moved Line Between Left and Middle\tCtrl+Shift+G"
+msgstr ""
+
+msgid "Go to Moved Line Between Middle and Right\tCtrl+Alt+G"
+msgstr ""
 
 #, c-format
 msgid "Op&en"
@@ -175,6 +179,9 @@ msgstr ""
 msgid "&Horizontal Wipe"
 msgstr ""
 
+msgid "&Rectangle Select"
+msgstr ""
+
 #, c-format
 msgid "&Set Background Color"
 msgstr ""
@@ -187,8 +194,19 @@ msgid "&File"
 msgstr "&Датотека"
 
 #, c-format
-msgid "&New\tCtrl+N"
-msgstr "&Нова\tCtrl+N"
+msgid "&New"
+msgstr "&Нова"
+
+msgid "&Text"
+msgstr ""
+
+#, c-format
+msgid "&Binary"
+msgstr ""
+
+#, c-format
+msgid "&Image"
+msgstr ""
 
 #, c-format
 msgid "New (&3 panes)"
@@ -221,9 +239,8 @@ msgstr ""
 msgid "< Empty >"
 msgstr "< Празан >"
 
-#, c-format
-msgid "E&xit"
-msgstr "Изла&з"
+msgid "E&xit\tCtrl+Q"
+msgstr "Изла&з\tCtrl+Q"
 
 #, c-format
 msgid "&Edit"
@@ -305,9 +322,8 @@ msgstr "Поново &учитај додатке"
 msgid "&Window"
 msgstr "Пр&озор"
 
-#, c-format
-msgid "Cl&ose"
-msgstr "&Затвори"
+msgid "Cl&ose\tCtrl+W"
+msgstr "&Затвори\tCtrl+W"
 
 #, c-format
 msgid "Clo&se All"
@@ -562,9 +578,8 @@ msgstr ""
 msgid "Save &Right As..."
 msgstr ""
 
-#, c-format
-msgid "&Print..."
-msgstr "&Одштампај..."
+msgid "&Print...\tCtrl+P"
+msgstr "&Одштампај...\tCtrl+P"
 
 msgid "Page Set&up..."
 msgstr "Подеси с&траницу..."
@@ -592,23 +607,12 @@ msgstr "Де&кодирање датотеке..."
 msgid "Reco&mpare As"
 msgstr ""
 
-msgid "&Text"
-msgstr ""
-
 msgid "T&able"
 msgstr ""
 
 #, c-format
 msgid "&XML"
 msgstr "&XML"
-
-#, c-format
-msgid "&Binary"
-msgstr ""
-
-#, c-format
-msgid "&Image"
-msgstr ""
 
 #, c-format
 msgid "&Undo\tCtrl+Z"
@@ -673,10 +677,6 @@ msgstr "&Претходна забелешка\tShift+F2"
 #, c-format
 msgid "&Clear All Bookmarks"
 msgstr "Очисти све забелешке"
-
-#, c-format
-msgid "&Go To...\tCtrl+G"
-msgstr "&Иди на...\tCtrl+G"
 
 #, c-format
 msgid "Syntax Highlight"
@@ -1063,8 +1063,7 @@ msgstr "Нема дефинисаног поређења"
 msgid "Auto prediffer"
 msgstr "Аутоматски дефиниши поређење"
 
-#, c-format
-msgid "G&oto Diff"
+msgid "G&o to Diff"
 msgstr "Иди &на разлику"
 
 #, c-format
@@ -1074,10 +1073,6 @@ msgstr "&Не премештај групе"
 #, c-format
 msgid "&All Moved Blocks"
 msgstr "Премести &све групе"
-
-#, c-format
-msgid "Moved Block for &Current Diff"
-msgstr "Премести тренутне разлике &групе"
 
 #, c-format
 msgid "W&hitespaces"
@@ -1096,8 +1091,8 @@ msgid "Ig&nore all"
 msgstr "За&немари све"
 
 #, c-format
-msgid "Case sensi&tive"
-msgstr "Подудара&ње слова"
+msgid "Ignore &case"
+msgstr "Занемари под&ударност"
 
 #, c-format
 msgid "Igno&re carriage return differences (Windows/Unix/Mac)"
@@ -1146,8 +1141,7 @@ msgstr ""
 msgid "About WinMerge"
 msgstr "О WinMerge"
 
-#, c-format
-msgid "Visit the WinMerge HomePage!"
+msgid "Visit the WinMerge Homepage!"
 msgstr "Посетите WinMerge-ов сајт"
 
 #, c-format
@@ -1240,6 +1234,9 @@ msgstr "Општи избор"
 msgid "Automatically &scroll to first difference"
 msgstr "Увек крени од &прве разлике"
 
+msgid "Automatically s&croll to first inline difference"
+msgstr ""
+
 msgid "Cl&ose windows with 'Esc':"
 msgstr "Затвори пр&озор са 'Esc':"
 
@@ -1318,8 +1315,7 @@ msgstr "&Нађи следеће"
 msgid "Find &Prev"
 msgstr ""
 
-#, c-format
-msgid "&Ok"
+msgid "&OK"
 msgstr "&У реду"
 
 #, c-format
@@ -1372,6 +1368,10 @@ msgstr "Нови"
 #, c-format
 msgid "&Background color:"
 msgstr ""
+
+#, c-format
+msgid "&Ok"
+msgstr "&У реду"
 
 #, c-format
 msgid "&Apply"
@@ -1610,20 +1610,17 @@ msgstr "Поређење ставки:"
 msgid "Items total:"
 msgstr "Укупно ставки :"
 
-#, c-format
-msgid "Go To"
+msgid "Go to"
 msgstr "Иди на"
 
-#, c-format
-msgid "G&oto:"
+msgid "G&o to:"
 msgstr "Иди &на:"
 
 #, c-format
 msgid "File"
 msgstr "Датотека"
 
-#, c-format
-msgid "Goto what"
+msgid "Go to what"
 msgstr "У датотеци"
 
 #, c-format
@@ -1634,8 +1631,7 @@ msgstr "Ре&д"
 msgid "&Difference"
 msgstr "Раз&лика"
 
-#, c-format
-msgid "&Go To"
+msgid "&Go to"
 msgstr "&Иди на"
 
 #, c-format
@@ -1662,9 +1658,8 @@ msgstr "Зане&мари све"
 msgid "Ignore blan&k lines"
 msgstr "Занемари пра&зне редове"
 
-#, c-format
-msgid "Ignore &case"
-msgstr "Занемари под&ударност"
+msgid "Ignore c&omment differences"
+msgstr ""
 
 #, c-format
 msgid "E&nable moved block detection"
@@ -1679,14 +1674,6 @@ msgstr ""
 
 msgid "Enable indent &heuristic"
 msgstr ""
-
-#, c-format
-msgid "Comments"
-msgstr "Напомене"
-
-#, c-format
-msgid "Filter Comments"
-msgstr "Филтрирај напомене"
 
 #, c-format
 msgid "Editor"
@@ -3698,14 +3685,10 @@ msgstr ""
 msgid "Folder does not exist."
 msgstr "Фасцикла не постоји"
 
-#, c-format
-msgid ""
-"Archive support is not enabled.\n"
-"All needed components (7-zip and/or Merge7z*.dll) for archive support cannot be found.\n"
-"See manual for more info about archive support and how to enable it."
+msgid "Archive support is not enabled.\nAll needed components (7-Zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
 msgstr ""
 "Рад са архивама је онемогућен.\n"
-"Све потребне компоненте (7-zip и/или Merge7z*.dll)за архиву не могу бити нађене.\n"
+"Све потребне компоненте (7-Zip и/или Merge7z*.dll)за архиву не могу бити нађене.\n"
 "Погледајте упутство како омогућити рад са архивама"
 
 #, c-format
@@ -3892,8 +3875,11 @@ msgid "<Automatic>"
 msgstr "<Аутоматски>"
 
 #, c-format
-msgid "G&oto Line %1"
+msgid "G&o to Line %1"
 msgstr "И&ди на ред %1"
+
+msgid "Go to Moved Line\tCtrl+Shift+G"
+msgstr ""
 
 #, c-format
 msgid "Disabled"
@@ -3950,8 +3936,7 @@ msgstr ""
 msgid "Enable &Auto Max Width"
 msgstr ""
 
-#, c-format
-msgid "frhed is not installed"
+msgid "Frhed is not installed."
 msgstr ""
 
 #, c-format
@@ -4087,5 +4072,9 @@ msgstr ""
 
 #, c-format
 msgid "Page: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
+msgstr ""
+
+#, c-format
+msgid "Rc: (%d, %d)  "
 msgstr ""
 

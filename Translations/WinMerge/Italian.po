@@ -38,8 +38,8 @@ msgstr "Copia da &sinistra"
 msgid "Copy fro&m Right"
 msgstr "Copia da &destra"
 
-msgid "&Select Line Difference"
-msgstr "&Seleziona differenze riga"
+msgid "&Select Line Difference\tF4"
+msgstr "&Seleziona differenze riga\tF4"
 
 msgid "&Undo"
 msgstr "Annul&la"
@@ -56,8 +56,14 @@ msgstr "C&opia"
 msgid "&Paste"
 msgstr "I&ncolla"
 
-msgid "&Goto..."
-msgstr "&Vai a..."
+msgid "&Go to...\tCtrl+G"
+msgstr "&Vai a...\tCtrl+G"
+
+msgid "Go to Moved Line Between Left and Middle\tCtrl+Shift+G"
+msgstr ""
+
+msgid "Go to Moved Line Between Middle and Right\tCtrl+Alt+G"
+msgstr ""
 
 msgid "Op&en"
 msgstr "&Apri"
@@ -145,6 +151,9 @@ msgstr ""
 msgid "&Horizontal Wipe"
 msgstr ""
 
+msgid "&Rectangle Select"
+msgstr ""
+
 msgid "&Set Background Color"
 msgstr "Imposta colore s&fondo"
 
@@ -154,8 +163,17 @@ msgstr ""
 msgid "&File"
 msgstr "&File"
 
-msgid "&New\tCtrl+N"
-msgstr "&Nuovo\tCtrl+N"
+msgid "&New"
+msgstr "&Nuovo"
+
+msgid "&Text"
+msgstr "&Testo"
+
+msgid "&Binary"
+msgstr "&Binario"
+
+msgid "&Image"
+msgstr "&Immagine"
 
 msgid "New (&3 panes)"
 msgstr "Nuovo (&3 pannelli)"
@@ -181,8 +199,8 @@ msgstr "F&ile o cartelle recenti"
 msgid "< Empty >"
 msgstr "< Vuoto >"
 
-msgid "E&xit"
-msgstr "&Esci"
+msgid "E&xit\tCtrl+Q"
+msgstr "&Esci\tCtrl+Q"
 
 msgid "&Edit"
 msgstr "&Modifica"
@@ -244,8 +262,8 @@ msgstr "&Ricarica plugin"
 msgid "&Window"
 msgstr "Fi&nestra"
 
-msgid "Cl&ose"
-msgstr "&Chiudi"
+msgid "Cl&ose\tCtrl+W"
+msgstr "&Chiudi\tCtrl+W"
 
 msgid "Clo&se All"
 msgstr "Chiudi &tutto"
@@ -439,8 +457,8 @@ msgstr "Salva &centrale con nome..."
 msgid "Save &Right As..."
 msgstr "Salva &destro con nome..."
 
-msgid "&Print..."
-msgstr "Stam&pa..."
+msgid "&Print...\tCtrl+P"
+msgstr "Stam&pa...\tCtrl+P"
 
 msgid "Page Set&up..."
 msgstr "Impos&ta pagina..."
@@ -463,20 +481,11 @@ msgstr "Codifica &file..."
 msgid "Reco&mpare As"
 msgstr "Riconfronta come"
 
-msgid "&Text"
-msgstr "&Testo"
-
 msgid "T&able"
 msgstr ""
 
 msgid "&XML"
 msgstr "&XML"
-
-msgid "&Binary"
-msgstr "&Binario"
-
-msgid "&Image"
-msgstr "&Immagine"
 
 msgid "&Undo\tCtrl+Z"
 msgstr "&Annulla\tCtrl+Z"
@@ -525,9 +534,6 @@ msgstr "&Segnalibro precedente\tMaiusc+F2"
 
 msgid "&Clear All Bookmarks"
 msgstr "&Elimina tutti i segnalibri"
-
-msgid "&Go To...\tCtrl+G"
-msgstr "Va&i a...\tCtrl+G"
 
 msgid "Syntax Highlight"
 msgstr "Evidenziazione sintassi"
@@ -840,7 +846,7 @@ msgstr "&Nessun prediffer"
 msgid "Auto prediffer"
 msgstr "Prediffer &automatico"
 
-msgid "G&oto Diff"
+msgid "G&o to Diff"
 msgstr "Vai alla &differenza"
 
 msgid "&No Moved Blocks"
@@ -848,9 +854,6 @@ msgstr "&Nessun blocco spostato"
 
 msgid "&All Moved Blocks"
 msgstr "&Tutti i blocchi spostati"
-
-msgid "Moved Block for &Current Diff"
-msgstr "Blo&cchi spostati per la differenza &attual"
 
 msgid "W&hitespaces"
 msgstr "Spa&zi"
@@ -864,8 +867,8 @@ msgstr "Ignora ca&mbiamenti"
 msgid "Ig&nore all"
 msgstr "Ig&nora tutto"
 
-msgid "Case sensi&tive"
-msgstr "&Maiuscolo/minuscolo"
+msgid "Ignore &case"
+msgstr "Ig&nora differenze maiuscole/minuscole"
 
 msgid "Igno&re carriage return differences (Windows/Unix/Mac)"
 msgstr "I&gnora differenze nei fine riga (Windows/Unix/Mac)"
@@ -903,7 +906,7 @@ msgstr "&Carica progetto..."
 msgid "About WinMerge"
 msgstr "Informazioni su WinMerge"
 
-msgid "Visit the WinMerge HomePage!"
+msgid "Visit the WinMerge Homepage!"
 msgstr "Visita il sito web di WinMerge!"
 
 msgid "OK"
@@ -981,6 +984,9 @@ msgstr "Generale"
 msgid "Automatically &scroll to first difference"
 msgstr "&Visualizza automaticamente la prima differenza"
 
+msgid "Automatically s&croll to first inline difference"
+msgstr ""
+
 msgid "Cl&ose windows with 'Esc':"
 msgstr "C&hiudi finestra con 'Esc':"
 
@@ -1043,7 +1049,7 @@ msgstr "Trova &successivo"
 msgid "Find &Prev"
 msgstr "Trova &precedente"
 
-msgid "&Ok"
+msgid "&OK"
 msgstr "&OK"
 
 msgid "Replace"
@@ -1084,6 +1090,9 @@ msgstr "Nuovo"
 
 msgid "&Background color:"
 msgstr "Colore di s&fondo:"
+
+msgid "&Ok"
+msgstr "&OK"
 
 msgid "&Apply"
 msgstr "&Applica"
@@ -1271,16 +1280,16 @@ msgstr "Elementi confrontati:"
 msgid "Items total:"
 msgstr "Totale elementi:"
 
-msgid "Go To"
+msgid "Go to"
 msgstr "Vai a"
 
-msgid "G&oto:"
+msgid "G&o to:"
 msgstr "Va&i a:"
 
 msgid "File"
 msgstr "File"
 
-msgid "Goto what"
+msgid "Go to what"
 msgstr "Vai a..."
 
 msgid "Li&ne"
@@ -1289,7 +1298,7 @@ msgstr "Li&nea"
 msgid "&Difference"
 msgstr "Di&fferenza"
 
-msgid "&Go To"
+msgid "&Go to"
 msgstr "&Vai"
 
 msgid "Compare"
@@ -1310,8 +1319,8 @@ msgstr "I&gnora tutto"
 msgid "Ignore blan&k lines"
 msgstr "Ign&ora le linee vuote"
 
-msgid "Ignore &case"
-msgstr "Ig&nora differenze maiuscole/minuscole"
+msgid "Ignore c&omment differences"
+msgstr ""
 
 msgid "E&nable moved block detection"
 msgstr "Attiva rilevamento blocc&hi spostati"
@@ -1324,12 +1333,6 @@ msgstr "&Algoritmo differenze (sperimentale):"
 
 msgid "Enable indent &heuristic"
 msgstr "Abilita rientro &euristico"
-
-msgid "Comments"
-msgstr "Commenti"
-
-msgid "Filter Comments"
-msgstr "Filtra commenti"
 
 msgid "Editor"
 msgstr "Editor"
@@ -3091,14 +3094,10 @@ msgstr ""
 msgid "Folder does not exist."
 msgstr "La cartella non esiste."
 
-msgid ""
-"Archive support is not enabled.\n"
-"All needed components (7-zip and/or Merge7z*.dll) for archive support cannot "
-"be found.\n"
-"See manual for more info about archive support and how to enable it."
+msgid "Archive support is not enabled.\nAll needed components (7-Zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
 msgstr ""
 "Il supporto per gli archivi non è attivo.\n"
-"Non sono stati trovati tutti i componenti necessari (7-zip e/o Merge7z*.dll) "
+"Non sono stati trovati tutti i componenti necessari (7-Zip e/o Merge7z*.dll) "
 "per il supporto agli archivi.\n"
 "Consulta il manuale per ulteriori informazioni sugli archivi."
 
@@ -3323,8 +3322,11 @@ msgid "<Automatic>"
 msgstr "<Automatico>"
 
 #, c-format
-msgid "G&oto Line %1"
+msgid "G&o to Line %1"
 msgstr "Vai alla &linea %1"
+
+msgid "Go to Moved Line\tCtrl+Shift+G"
+msgstr ""
 
 msgid "Disabled"
 msgstr "Disattivato"
@@ -3368,8 +3370,8 @@ msgstr "Chiudi &altre schede"
 msgid "Enable &Auto Max Width"
 msgstr "Abilita altezza massima &automatica"
 
-msgid "frhed is not installed"
-msgstr "frhed non è installato"
+msgid "Frhed is not installed."
+msgstr "Frhed non è installato."
 
 #, c-format
 msgid "%1 does not exist. Do you want to create it?"
@@ -3508,5 +3510,9 @@ msgstr ""
 
 #, c-format
 msgid "Page: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
+msgstr ""
+
+#, c-format
+msgid "Rc: (%d, %d)  "
 msgstr ""
 

@@ -45,9 +45,8 @@ msgstr ""
 msgid "Copy fro&m Right"
 msgstr ""
 
-#, c-format
-msgid "&Select Line Difference"
-msgstr "&Vælg linjeforskel"
+msgid "&Select Line Difference\tF4"
+msgstr "&Vælg linjeforskel\tF4""
 
 #, c-format
 msgid "&Undo"
@@ -69,9 +68,14 @@ msgstr "Ko&pier"
 msgid "&Paste"
 msgstr "&Indsæt"
 
-#, c-format
-msgid "&Goto..."
-msgstr "Gå &til..."
+msgid "&Go to...\tCtrl+G"
+msgstr "Gå &til...\tCtrl+G"
+
+msgid "Go to Moved Line Between Left and Middle\tCtrl+Shift+G"
+msgstr ""
+
+msgid "Go to Moved Line Between Middle and Right\tCtrl+Alt+G"
+msgstr ""
 
 #, c-format
 msgid "Op&en"
@@ -177,6 +181,9 @@ msgstr ""
 msgid "&Horizontal Wipe"
 msgstr ""
 
+msgid "&Rectangle Select"
+msgstr ""
+
 #, c-format
 msgid "&Set Background Color"
 msgstr ""
@@ -189,8 +196,20 @@ msgid "&File"
 msgstr "&Filer"
 
 #, c-format
-msgid "&New\tCtrl+N"
-msgstr "&Ny\tCtrl+N"
+msgid "&New"
+msgstr "&Ny"
+
+#, c-format
+msgid "&Text"
+msgstr ""
+
+#, c-format
+msgid "&Binary"
+msgstr "&Binær"
+
+#, c-format
+msgid "&Image"
+msgstr ""
 
 #, c-format
 msgid "New (&3 panes)"
@@ -223,9 +242,8 @@ msgstr ""
 msgid "< Empty >"
 msgstr "< Tom >"
 
-#, c-format
-msgid "E&xit"
-msgstr "&Afslut"
+msgid "E&xit\tCtrl+Q"
+msgstr "&Afslut\tCtrl+Q"
 
 #, c-format
 msgid "&Edit"
@@ -307,9 +325,8 @@ msgstr "&Genindlæs plugins"
 msgid "&Window"
 msgstr "Vind&ue"
 
-#, c-format
-msgid "Cl&ose"
-msgstr "&Luk"
+msgid "Cl&ose\tCtrl+W"
+msgstr "&Luk\tCtrl+W"
 
 #, c-format
 msgid "Clo&se All"
@@ -564,9 +581,8 @@ msgstr ""
 msgid "Save &Right As..."
 msgstr ""
 
-#, c-format
-msgid "&Print..."
-msgstr "&Udskriv..."
+msgid "&Print...\tCtrl+P"
+msgstr "&Udskriv...\tCtrl+P"
 
 msgid "Page Set&up..."
 msgstr "Side op&sætning..."
@@ -594,24 +610,12 @@ msgstr "&Fil Kodning..."
 msgid "Reco&mpare As"
 msgstr ""
 
-#, c-format
-msgid "&Text"
-msgstr ""
-
 msgid "T&able"
 msgstr ""
 
 #, c-format
 msgid "&XML"
 msgstr "&XML"
-
-#, c-format
-msgid "&Binary"
-msgstr "&Binær"
-
-#, c-format
-msgid "&Image"
-msgstr ""
 
 #, c-format
 msgid "&Undo\tCtrl+Z"
@@ -676,10 +680,6 @@ msgstr "&Forrige bogmærke\tShift+F2"
 #, c-format
 msgid "&Clear All Bookmarks"
 msgstr "&Slet alle bogmærker"
-
-#, c-format
-msgid "&Go To...\tCtrl+G"
-msgstr "&Gå til...\tCtrl+G"
 
 #, c-format
 msgid "Syntax Highlight"
@@ -1067,8 +1067,7 @@ msgstr "&Ingen prediffer"
 msgid "Auto prediffer"
 msgstr "&Automatisk prediffer"
 
-#, c-format
-msgid "G&oto Diff"
+msgid "G&o to Diff"
 msgstr "Gå til &forskel"
 
 #, c-format
@@ -1078,10 +1077,6 @@ msgstr "&Ingen flyttede blokke"
 #, c-format
 msgid "&All Moved Blocks"
 msgstr "&Alle flyttede blokke"
-
-#, c-format
-msgid "Moved Block for &Current Diff"
-msgstr "Flyttede blokke for &denne forskel"
 
 #, c-format
 msgid "W&hitespaces"
@@ -1100,8 +1095,8 @@ msgid "Ig&nore all"
 msgstr "Ign&orer alle"
 
 #, c-format
-msgid "Case sensi&tive"
-msgstr "Sammenlign store/sm&å bogstaver"
+msgid "Ignore &case"
+msgstr "Ignorer store/små &bogstaver"
 
 #, c-format
 msgid "Igno&re carriage return differences (Windows/Unix/Mac)"
@@ -1151,8 +1146,7 @@ msgstr ""
 msgid "About WinMerge"
 msgstr "Om WinMerge"
 
-#, c-format
-msgid "Visit the WinMerge HomePage!"
+msgid "Visit the WinMerge Homepage!"
 msgstr "Besøg WinMerge hjemmesiden!"
 
 #, c-format
@@ -1254,6 +1248,9 @@ msgstr "Generelt"
 msgid "Automatically &scroll to first difference"
 msgstr "Scroll &automatisk til første forskel"
 
+msgid "Automatically s&croll to first inline difference"
+msgstr ""
+
 msgid "Cl&ose windows with 'Esc':"
 msgstr "L&uk vinduer med 'Esc' tasten:"
 
@@ -1334,8 +1331,7 @@ msgstr "&Find næste"
 msgid "Find &Prev"
 msgstr ""
 
-#, c-format
-msgid "&Ok"
+msgid "&OK"
 msgstr "&OK"
 
 #, c-format
@@ -1388,6 +1384,10 @@ msgstr "Ny"
 #, c-format
 msgid "&Background color:"
 msgstr ""
+
+#, c-format
+msgid "&Ok"
+msgstr "&OK"
 
 #, c-format
 msgid "&Apply"
@@ -1630,20 +1630,17 @@ msgstr "Emner sammenlignet:"
 msgid "Items total:"
 msgstr "Emner ialt:"
 
-#, c-format
-msgid "Go To"
+msgid "Go to"
 msgstr "Gå til"
 
-#, c-format
-msgid "G&oto:"
+msgid "G&o to:"
 msgstr "G&å til:"
 
 #, c-format
 msgid "File"
 msgstr "Fil"
 
-#, c-format
-msgid "Goto what"
+msgid "Go to what"
 msgstr "Gå til hvad"
 
 #, c-format
@@ -1654,8 +1651,7 @@ msgstr "Li&nje"
 msgid "&Difference"
 msgstr "&Forskel"
 
-#, c-format
-msgid "&Go To"
+msgid "&Go to"
 msgstr "&Gå til"
 
 #, c-format
@@ -1682,9 +1678,8 @@ msgstr "I&gnorer alle"
 msgid "Ignore blan&k lines"
 msgstr "Ignorer blan&ke linjer"
 
-#, c-format
-msgid "Ignore &case"
-msgstr "Ignorer store/små &bogstaver"
+msgid "Ignore c&omment differences"
+msgstr ""
 
 #, c-format
 msgid "E&nable moved block detection"
@@ -1699,14 +1694,6 @@ msgstr ""
 
 msgid "Enable indent &heuristic"
 msgstr ""
-
-#, c-format
-msgid "Comments"
-msgstr "Kommentarer"
-
-#, c-format
-msgid "Filter Comments"
-msgstr "Filter Kommentarer"
 
 #, c-format
 msgid "Editor"
@@ -3761,15 +3748,10 @@ msgstr ""
 msgid "Folder does not exist."
 msgstr "Mappen eksisterer ikke."
 
-#, c-format
-msgid ""
-"Archive support is not enabled.\n"
-"All needed components (7-zip and/or Merge7z*.dll) for archive support cannot "
-"be found.\n"
-"See manual for more info about archive support and how to enable it."
+msgid "Archive support is not enabled.\nAll needed components (7-Zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
 msgstr ""
 "Arkiv support er ikke aktiveret.\n"
-"Alle komponenter (7-zip og/eller Merge7z*.dll) der er nødvendige til arkiv "
+"Alle komponenter (7-Zip og/eller Merge7z*.dll) der er nødvendige til arkiv "
 "support kan ikke findes.\n"
 "Se manualen for mere information om arkiv support og hvordan man aktivere "
 "det."
@@ -3960,8 +3942,11 @@ msgid "<Automatic>"
 msgstr "<Automatisk>"
 
 #, c-format
-msgid "G&oto Line %1"
+msgid "G&o to Line %1"
 msgstr "G&å til linje %1"
+
+msgid "Go to Moved Line\tCtrl+Shift+G"
+msgstr ""
 
 #, c-format
 msgid "Disabled"
@@ -4018,8 +4003,7 @@ msgstr ""
 msgid "Enable &Auto Max Width"
 msgstr ""
 
-#, c-format
-msgid "frhed is not installed"
+msgid "Frhed is not installed."
 msgstr ""
 
 #, c-format
@@ -4155,5 +4139,9 @@ msgstr ""
 
 #, c-format
 msgid "Page: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
+msgstr ""
+
+#, c-format
+msgid "Rc: (%d, %d)  "
 msgstr ""
 

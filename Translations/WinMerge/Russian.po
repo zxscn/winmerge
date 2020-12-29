@@ -2,21 +2,18 @@
 # Released under the "GNU General Public License"
 #
 # Translators:
-# * wvxwxvw <ru-board>
+# * wvxwxvw <https://github.com/wvxwxvw>
 # * Dmitriy Rublev <kaktebyavirubit at gmail.com>
 # * Valerij Romanovskij <valerik-roma at mail.ru>
 # * Dmitriy S. Aleshkowskiy <wwarlock at mail.ru>
 # * geek2k <geek2k at users.sourceforge.net>
 #
-# ID line follows -- this is updated by SVN
-# $Id: Russian.po 7582 2013-01-13 04:54:26Z christianlist $
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: WinMerge\n"
 "Report-Msgid-Bugs-To: https://bugs.winmerge.org/\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-07-28 01:00+0300\n"
+"POT-Creation-Date: 2020-11-25 21:32+0000\n"
+"PO-Revision-Date: 2020-11-29 09:09+0200\n"
 "Last-Translator: wvxwxvw\n"
 "Language-Team: Russian <winmerge-translate@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -43,8 +40,8 @@ msgstr "Копировать слева"
 msgid "Copy fro&m Right"
 msgstr "Копировать справа"
 
-msgid "&Select Line Difference"
-msgstr "&Выбрать отличие"
+msgid "&Select Line Difference\tF4"
+msgstr "&Выбрать отличие\tF4"
 
 msgid "&Undo"
 msgstr "&Отменить"
@@ -61,8 +58,14 @@ msgstr "&Копировать"
 msgid "&Paste"
 msgstr "&Вставить"
 
-msgid "&Goto..."
-msgstr "Перейти к..."
+msgid "&Go to...\tCtrl+G"
+msgstr "Перейти к...\tCtrl+G"
+
+msgid "Go to Moved Line Between Left and Middle\tCtrl+Shift+G"
+msgstr "Перейти к перемещенной между левой и средней\tCtrl+Shift+G"
+
+msgid "Go to Moved Line Between Middle and Right\tCtrl+Alt+G"
+msgstr "Перейти к перемещенной между средней и правой\tCtrl+Alt+G"
 
 msgid "Op&en"
 msgstr "От&крыть"
@@ -114,7 +117,7 @@ msgstr "&Масштаб"
 
 #, c-format
 msgid "25%"
-msgstr ""
+msgstr "25%"
 
 msgid "Zoom &In\tCtrl++"
 msgstr "Увеличить\tCtrl++"
@@ -150,6 +153,9 @@ msgstr "Вертикальное стирание"
 msgid "&Horizontal Wipe"
 msgstr "Горизонтальное стирание"
 
+msgid "&Rectangle Select"
+msgstr ""
+
 msgid "&Set Background Color"
 msgstr "Цвет фона"
 
@@ -159,8 +165,17 @@ msgstr "&Масштаб изображений"
 msgid "&File"
 msgstr "&Файл"
 
-msgid "&New\tCtrl+N"
-msgstr "Создать\tCtrl+N"
+msgid "&New"
+msgstr "Создать"
+
+msgid "&Text"
+msgstr "Текст"
+
+msgid "&Binary"
+msgstr "Двоичный"
+
+msgid "&Image"
+msgstr "Изображение"
 
 msgid "New (&3 panes)"
 msgstr "Создать (&3 панели)"
@@ -186,8 +201,8 @@ msgstr "Недавние файлы и папки"
 msgid "< Empty >"
 msgstr "< Нет >"
 
-msgid "E&xit"
-msgstr "В&ыход"
+msgid "E&xit\tCtrl+Q"
+msgstr "В&ыход\tCtrl+Q"
 
 msgid "&Edit"
 msgstr "&Правка"
@@ -229,7 +244,7 @@ msgid "&Plugins"
 msgstr "Плагины"
 
 msgid "P&lugin Settings..."
-msgstr "Настройки плагинов"
+msgstr "Настройки плагинов..."
 
 msgid "Ma&nual Prediffer"
 msgstr "Ручное предсравнение"
@@ -249,11 +264,11 @@ msgstr "&Перезагрузить плагины"
 msgid "&Window"
 msgstr "&Окно"
 
-msgid "Cl&ose"
-msgstr "Закрыть"
+msgid "Cl&ose\tCtrl+W"
+msgstr "&Закрыть\tCtrl+W"
 
 msgid "Clo&se All"
-msgstr "Закрыть все"
+msgstr "Закрыт&ь все"
 
 msgid "Change &Pane\tF6"
 msgstr "Сменить панель\tF6"
@@ -444,8 +459,8 @@ msgstr "Сохранить посередине как..."
 msgid "Save &Right As..."
 msgstr "Сохранить справа как..."
 
-msgid "&Print..."
-msgstr "&Печать..."
+msgid "&Print...\tCtrl+P"
+msgstr "&Печать...\tCtrl+P"
 
 msgid "Page Set&up..."
 msgstr "Параметры страницы..."
@@ -468,20 +483,11 @@ msgstr "Кодировка файла..."
 msgid "Reco&mpare As"
 msgstr "Пересравнить как"
 
-msgid "&Text"
-msgstr "Текст"
-
 msgid "T&able"
 msgstr "Таблица"
 
 msgid "&XML"
 msgstr "&XML"
-
-msgid "&Binary"
-msgstr "Двоичный"
-
-msgid "&Image"
-msgstr "Изображение"
 
 msgid "&Undo\tCtrl+Z"
 msgstr "&Отменить\tCtrl+Z"
@@ -531,9 +537,6 @@ msgstr "&Предыдущая закладка\tShift+F2"
 msgid "&Clear All Bookmarks"
 msgstr "&Удалить все закладки"
 
-msgid "&Go To...\tCtrl+G"
-msgstr "Перейти к...\tCtrl+G"
-
 msgid "Syntax Highlight"
 msgstr "Подсветка синтаксиса"
 
@@ -571,7 +574,7 @@ msgid "&View Whitespace"
 msgstr "Показы&вать невидимые"
 
 msgid "View E&OL"
-msgstr ""
+msgstr "Показывать EOL"
 
 msgid "Vie&w Line Differences"
 msgstr "Показывать отличия строк"
@@ -766,7 +769,7 @@ msgid "with &External Editor"
 msgstr "внешним редактором"
 
 msgid "Open &Parent Folder..."
-msgstr ""
+msgstr "Открыть &родительскую папку..."
 
 msgid "Open Midd&le"
 msgstr "Открыть средний"
@@ -845,7 +848,7 @@ msgstr "&Без предсравнения"
 msgid "Auto prediffer"
 msgstr "&Автопредсравнение"
 
-msgid "G&oto Diff"
+msgid "G&o to Diff"
 msgstr "Перейти к &отличию"
 
 msgid "&No Moved Blocks"
@@ -853,9 +856,6 @@ msgstr "&Без перемещенных блоков"
 
 msgid "&All Moved Blocks"
 msgstr "&Все перемещенные блоки"
-
-msgid "Moved Block for &Current Diff"
-msgstr "Перемещенный блок текущего отличия"
 
 msgid "W&hitespaces"
 msgstr "Невидимые"
@@ -869,8 +869,8 @@ msgstr "Игнорировать изменения"
 msgid "Ig&nore all"
 msgstr "Игнорировать все"
 
-msgid "Case sensi&tive"
-msgstr "Учитывать регистр"
+msgid "Ignore &case"
+msgstr "Игнорировать р&егистр"
 
 msgid "Igno&re carriage return differences (Windows/Unix/Mac)"
 msgstr "Игнорировать концы строк (Win/Unix/Mac)"
@@ -908,7 +908,7 @@ msgstr "Загрузить проект..."
 msgid "About WinMerge"
 msgstr "О программе WinMerge"
 
-msgid "Visit the WinMerge HomePage!"
+msgid "Visit the WinMerge Homepage!"
 msgstr "Домашняя страница WinMerge !"
 
 msgid "OK"
@@ -942,7 +942,7 @@ msgid "Swap 2nd | 3rd"
 msgstr "Поменять 2-й | 3-й"
 
 msgid "B&rowse..."
-msgstr "Обзор"
+msgstr "Обзор..."
 
 msgid "&3rd File or Folder (Optional)"
 msgstr "&3-й файл или папка (необязательно)"
@@ -966,7 +966,7 @@ msgid " File: Unpacker Plugin"
 msgstr " Файл: плагин распаковщика"
 
 msgid "Se&lect..."
-msgstr "Выбрать"
+msgstr "Выбрать..."
 
 msgid "Co&mpare"
 msgstr "Сравнить"
@@ -984,13 +984,16 @@ msgid "General"
 msgstr "Основные"
 
 msgid "Automatically &scroll to first difference"
-msgstr "Автоматически &установить на первое отличие"
+msgstr "Автопрокрутка на первое отличие"
+
+msgid "Automatically s&croll to first inline difference"
+msgstr "Автопрокрутка на первое отличие в строке"
 
 msgid "Cl&ose windows with 'Esc':"
-msgstr "За&крывать окна клавишей 'Esc'"
+msgstr "За&крывать окна клавишей 'Esc':"
 
 msgid "&Automatically verify paths in Open-dialog"
-msgstr "Автоматически проверять пути в диалоге открытия файлов"
+msgstr "Автопроверка пути в диалоге открытия файлов"
 
 msgid "All&ow only one instance to run"
 msgstr "&Разрешить запуск только одной копии"
@@ -1005,7 +1008,7 @@ msgid "Show \"Select Files or Folders\" Dialog on Startup"
 msgstr "Показывать диалог \"Выбрать файлы или папки\" при запуске"
 
 msgid "Close \"Select Files or Folders\" Dialog on clicking OK button"
-msgstr "Закрывать диалог \"Выбрать файлы или папки\" при нажатии кнопки ОК"
+msgstr "Закрывать диалог \"Выбрать файлы или папки\" при нажатии ОК"
 
 msgid "O&pen-dialog Auto-Completion:"
 msgstr "Автозавершение в диалоге открытия:"
@@ -1046,8 +1049,8 @@ msgstr "Следующее"
 msgid "Find &Prev"
 msgstr "Предыдущее"
 
-msgid "&Ok"
-msgstr "&Ok"
+msgid "&OK"
+msgstr "&OK"
 
 msgid "Replace"
 msgstr "Заменить"
@@ -1056,7 +1059,7 @@ msgid "Re&place with:"
 msgstr "За&менить:"
 
 msgid "&Don't wrap end of file"
-msgstr "Не останавливаться при достижении конца файла"
+msgstr "Не останавливаться в конце файла"
 
 msgid "Replace in"
 msgstr "Заменить"
@@ -1088,6 +1091,9 @@ msgstr "Создать"
 msgid "&Background color:"
 msgstr "Цвет фона:"
 
+msgid "&Ok"
+msgstr "&Ok"
+
 msgid "&Apply"
 msgstr "&Применить"
 
@@ -1110,7 +1116,7 @@ msgid "Colors"
 msgstr "Цвета"
 
 msgid "Color Scheme:"
-msgstr "Цветовая схема"
+msgstr "Цветовая схема:"
 
 msgid "Background"
 msgstr "Фон"
@@ -1274,17 +1280,17 @@ msgstr "Обработано:"
 msgid "Items total:"
 msgstr "Всего:"
 
-msgid "Go To"
+msgid "Go to"
 msgstr "Перейти"
 
-msgid "G&oto:"
-msgstr "&К:"
+msgid "G&o to:"
+msgstr "&Перейти к:"
 
 msgid "File"
 msgstr "Файлу"
 
-msgid "Goto what"
-msgstr "К чему"
+msgid "Go to what"
+msgstr "Перейти к чему"
 
 msgid "Li&ne"
 msgstr "&Строке"
@@ -1292,7 +1298,7 @@ msgstr "&Строке"
 msgid "&Difference"
 msgstr "&Отличию"
 
-msgid "&Go To"
+msgid "&Go to"
 msgstr "Перейт&и"
 
 msgid "Compare"
@@ -1313,8 +1319,8 @@ msgstr "Игнорировать &все невидимые"
 msgid "Ignore blan&k lines"
 msgstr "Игнорировать пуст&ые строки"
 
-msgid "Ignore &case"
-msgstr "Игнорировать р&егистр"
+msgid "Ignore c&omment differences"
+msgstr "Игнорировать отличия в комментариях"
 
 msgid "E&nable moved block detection"
 msgstr "Обнаружение переме&щенных блоков"
@@ -1327,12 +1333,6 @@ msgstr "Алгоритм сравнения (эксперимент.):"
 
 msgid "Enable indent &heuristic"
 msgstr "Включать эвристику отступов"
-
-msgid "Comments"
-msgstr "Комментарии"
-
-msgid "Filter Comments"
-msgstr "Фильтр комментариев"
 
 msgid "Editor"
 msgstr "Редактор"
@@ -1374,7 +1374,7 @@ msgid "W&ord break characters:"
 msgstr "Символы разрыва слов:"
 
 msgid "&Rendering Mode:"
-msgstr "Режим отрисовки"
+msgstr "Режим отрисовки:"
 
 msgid "Filefilters"
 msgstr "Фильтры файлов"
@@ -1635,16 +1635,16 @@ msgid "File type"
 msgstr "Тип файла"
 
 msgid "&CSV"
-msgstr ""
+msgstr "&CSV"
 
 msgid "&TSV"
-msgstr ""
+msgstr "&TSV"
 
 msgid "Custom &Delimiter-Separated Values"
 msgstr "Свои значения разделителей"
 
 msgid "D&elimiter character:"
-msgstr "Символ разделителя"
+msgstr "Символ разделителя:"
 
 msgid "&Allow newlines in quotes"
 msgstr "Разрешить новые строки в кавычках"
@@ -1707,7 +1707,7 @@ msgid "To right"
 msgstr "Направо"
 
 msgid "Don't ask this &question again."
-msgstr "Не справшивать &больше"
+msgstr "Не справшивать &больше."
 
 msgid "Yes"
 msgstr "Да"
@@ -1786,7 +1786,7 @@ msgid "Custom Delimiter-Separated Values"
 msgstr "Свои значения разделителей"
 
 msgid "File Patterns:"
-msgstr "Шаблоны файлов"
+msgstr "Шаблоны файлов:"
 
 msgctxt "Options dialog|Categories"
 msgid "Binary"
@@ -1910,7 +1910,7 @@ msgid "Skip &all"
 msgstr "Проп&устить все"
 
 msgid "Don't display this &message again."
-msgstr "Не показывать &больше"
+msgstr "Не показывать &больше."
 
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr "Чтобы снова показывать это сообщение, нажмите кнопку Сброс на странице настроек Общие."
@@ -1943,10 +1943,10 @@ msgid "To right:"
 msgstr "Направо:"
 
 msgid "From middle:"
-msgstr ""
+msgstr "Из середины:"
 
 msgid "To middle:"
-msgstr ""
+msgstr "На середину:"
 
 #, c-format
 msgid "Version %1"
@@ -2039,7 +2039,7 @@ msgid "Regular expression"
 msgstr "Регулярное выражение"
 
 msgid "Filters were updated. Do you want to refresh all open folder compares?\n\nIf you do not want to refresh all compares now you can select 'No' and refresh compares later."
-msgstr "Фильтры были обновлены. Обновить все открытые сравниваемые папки?\nЕсли не хотите обновлять сейчас, нажмите \"Нет\"."
+msgstr "Фильтры были обновлены. Обновить все открытые сравниваемые папки?\n\nЕсли не хотите обновлять сейчас, нажмите \"Нет\"."
 
 msgid "Folder Comparison Results"
 msgstr "Результаты сравнения папок"
@@ -2122,7 +2122,7 @@ msgid "Right (3rd) path is invalid!"
 msgstr "Путь справа (3-й) указан неверно!"
 
 msgid "Both paths are invalid!"
-msgstr "Оба пути указаны неверно"
+msgstr "Оба пути указаны неверно!"
 
 msgid "Left (1st) and Middle (2nd) paths are invalid!"
 msgstr "Пути слева (1-й) и посередине (2-й) указаны неверно!"
@@ -2134,7 +2134,7 @@ msgid "Middle (2nd) and Right (3rd) paths are invalid!"
 msgstr "Пути посередине (2-й) и справа (3-й) указаны неверно!"
 
 msgid "All paths are invalid!"
-msgstr "Все пути указаны неверно"
+msgstr "Все пути указаны неверно!"
 
 msgid "Only enabled for file comparisons"
 msgstr "Включено только для сравнения файлов"
@@ -2155,17 +2155,17 @@ msgid "Cannot open file\n%1\n\n%2"
 msgstr "Не удается открыть файл\n%1\n\n%2"
 
 msgid "Failed to parse conflict file."
-msgstr "Сбой разбора файла конфликтов"
+msgstr "Сбой разбора файла конфликтов."
 
 #, c-format
 msgid "The file\n%1\nis not a conflict file."
-msgstr "Файл\n%1\nне является файлом конфликтов"
+msgstr "Файл\n%1\nне является файлом конфликтов."
 
 msgid "You are about to compare very large files.\nShowing the contents of the files requires a very large amount of memory.\nDo you want to show only the comparison results, not the contents of the files?\n\n"
 msgstr "Вы собираетесь сравнить очень большие файлы.\nОтображение содержимого этих файлов требует очень много памяти.\nХотите увидеть только результаты сравнения, а не содержимое файлов?\n\n"
 
 msgid "Save As"
-msgstr "Сохранить как..."
+msgstr "Сохранить как"
 
 #, c-format
 msgid "Save changes to %1?"
@@ -2207,13 +2207,13 @@ msgid "Another application has updated file\n%1\nsince WinMerge scanned it last 
 msgstr "Другое приложение обновило файл\n%1\nуже проверенный WinMerge.\n\nПерезагрузить файл?"
 
 msgid "Save Left File As"
-msgstr "Сохранить файл слева как..."
+msgstr "Сохранить файл слева как"
 
 msgid "Save Middle File As"
-msgstr "Сохранить файл посередине как..."
+msgstr "Сохранить файл посередине как"
 
 msgid "Save Right File As"
-msgstr "Сохранить файл справа как..."
+msgstr "Сохранить файл справа как"
 
 #, c-format
 msgid "The file\n%1\nhas disappeared. Please save a copy of the file to continue."
@@ -2588,7 +2588,7 @@ msgid "Middle side creation time."
 msgstr "Время создания файла посередине."
 
 msgid "Tells which side has newer modification date."
-msgstr "Показать с какой из сторон дата изменения файла новее"
+msgstr "Показать на какой из сторон дата изменения файла новее."
 
 msgid "Left side file version, only for some filetypes."
 msgstr "Версия файла слева, только для некоторых типов файлов."
@@ -2612,13 +2612,13 @@ msgid "Middle side attributes."
 msgstr "Атрибуты посередине."
 
 msgid "Left side file EOL type."
-msgstr "Тип конца строки для файла слева"
+msgstr "Тип конца строки для файла слева."
 
 msgid "Right side file EOL type."
-msgstr "Тип конца строки для файла справа"
+msgstr "Тип конца строки для файла справа."
 
 msgid "Middle side file EOL type."
-msgstr "Тип конца строки для файла посередине"
+msgstr "Тип конца строки для файла посередине."
 
 msgid "Left side encoding."
 msgstr "Кодировка слева."
@@ -2665,10 +2665,10 @@ msgid "The report has been created successfully."
 msgstr "Отчет успешно создан."
 
 msgid "Cannot add a synchronization point at this line."
-msgstr ""
+msgstr "Невозможно добавить точку синхронизации в этой строке."
 
 msgid "The same file is opened in both panels."
-msgstr "На обоих панелях открыт один и тот же файл"
+msgstr "На обоих панелях открыт один и тот же файл."
 
 msgid "The selected files are identical."
 msgstr "Выбранные файлы идентичны."
@@ -2807,8 +2807,8 @@ msgstr "Сначала сохраните все файлы.\n\nДля созд�
 msgid "Folder does not exist."
 msgstr "Папка не существует."
 
-msgid "Archive support is not enabled.\nAll needed components (7-zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
-msgstr "Поддержка архивов не включена.\nНе найдены все необходимые компоненты (7-zip и/или Merge7z*.dll).\nПосмотрите инструкцию для получения дополнительной информации о поддержке архивов и о том, как ее включить."
+msgid "Archive support is not enabled.\nAll needed components (7-Zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
+msgstr "Поддержка архивов не включена.\nНе найдены необходимые компоненты (7-Zip и/или Merge7z*.dll) для поддержки архивов.\nДополнительную информацию о поддержке архивов и ее включении смотрите в руководстве."
 
 msgid "Select file for export"
 msgstr "Выбрать файл для экспорта"
@@ -2846,7 +2846,7 @@ msgid "Marker Color %d"
 msgstr "Цвет маркера %d"
 
 msgid "New Pattern"
-msgstr ""
+msgstr "Новый шаблон"
 
 msgid "Type"
 msgstr "Тип"
@@ -2861,7 +2861,7 @@ msgid "Editor script"
 msgstr "Редактор скриптов"
 
 msgid "\nDifference in the Current Line"
-msgstr "Отличия в текущей строке"
+msgstr "\nОтличие в текущей строке"
 
 msgid "\nOptions"
 msgstr "\nНастройки"
@@ -2950,8 +2950,11 @@ msgid "<Automatic>"
 msgstr "<Автоматически>"
 
 #, c-format
-msgid "G&oto Line %1"
-msgstr "Перейти к &строке %1"
+msgid "G&o to Line %1"
+msgstr "Перейти к строке %1"
+
+msgid "Go to Moved Line\tCtrl+Shift+G"
+msgstr "Перейти к перемещенной строке\tCtrl+Shift+G"
 
 msgid "Disabled"
 msgstr "Отключен"
@@ -2995,8 +2998,8 @@ msgstr "Закрыть другие вкладки"
 msgid "Enable &Auto Max Width"
 msgstr "Включить максимальную авто ширину"
 
-msgid "frhed is not installed"
-msgstr "frhed не установлен"
+msgid "Frhed is not installed."
+msgstr "Frhed не установлен."
 
 #, c-format
 msgid "%1 does not exist. Do you want to create it?"
@@ -3130,4 +3133,8 @@ msgstr ""
 #, c-format
 msgid "Page: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
 msgstr "Страница: %d/%d  Масштаб: %d%%  %dx%dpx  %dbpp"
+
+#, c-format
+msgid "Rc: (%d, %d)  "
+msgstr ""
 

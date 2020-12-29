@@ -48,9 +48,8 @@ msgstr "왼쪽에서 복사(&F)"
 msgid "Copy fro&m Right"
 msgstr "오른쪽에서 복사(&M)"
 
-#, c-format
-msgid "&Select Line Difference"
-msgstr "줄 차이점 선택(&S)"
+msgid "&Select Line Difference\tF4"
+msgstr "줄 차이점 선택(&S)\tF4"
 
 #, c-format
 msgid "&Undo"
@@ -72,9 +71,14 @@ msgstr "복사(&C)"
 msgid "&Paste"
 msgstr "붙여넣기(&P)"
 
-#, c-format
-msgid "&Goto..."
-msgstr "이동(&G)"
+msgid "&Go to...\tCtrl+G"
+msgstr "이동(&G)\tCtrl+G"
+
+msgid "Go to Moved Line Between Left and Middle\tCtrl+Shift+G"
+msgstr ""
+
+msgid "Go to Moved Line Between Middle and Right\tCtrl+Alt+G"
+msgstr ""
 
 #, c-format
 msgid "Op&en"
@@ -180,6 +184,9 @@ msgstr ""
 msgid "&Horizontal Wipe"
 msgstr ""
 
+msgid "&Rectangle Select"
+msgstr ""
+
 #, c-format
 msgid "&Set Background Color"
 msgstr "배경색 설정(&S)"
@@ -192,8 +199,20 @@ msgid "&File"
 msgstr "파일(&F)"
 
 #, c-format
-msgid "&New\tCtrl+N"
-msgstr "새로 만들기(&N)\tCtrl+N"
+msgid "&New"
+msgstr "새로 만들기(&N)"
+
+#, c-format
+msgid "&Text"
+msgstr ""
+
+#, c-format
+msgid "&Binary"
+msgstr "바이너리(&B)"
+
+#, c-format
+msgid "&Image"
+msgstr "이미지(&I)"
 
 #, c-format
 msgid "New (&3 panes)"
@@ -226,9 +245,8 @@ msgstr "최근 파일/폴더(&I)"
 msgid "< Empty >"
 msgstr "< 비어 있음 >"
 
-#, c-format
-msgid "E&xit"
-msgstr "종료(&X)"
+msgid "E&xit\tCtrl+Q"
+msgstr "종료(&X)\tCtrl+Q"
 
 #, c-format
 msgid "&Edit"
@@ -310,9 +328,8 @@ msgstr "플러그인 다시 불러오기(&R)"
 msgid "&Window"
 msgstr "창(&W)"
 
-#, c-format
-msgid "Cl&ose"
-msgstr "닫기(&O)"
+msgid "Cl&ose\tCtrl+W"
+msgstr "닫기(&O)\tCtrl+W"
 
 #, c-format
 msgid "Clo&se All"
@@ -567,9 +584,8 @@ msgstr "가운데 저장(&M)..."
 msgid "Save &Right As..."
 msgstr "오른쪽 저장(&R)..."
 
-#, c-format
-msgid "&Print..."
-msgstr "인쇄(&P)..."
+msgid "&Print...\tCtrl+P"
+msgstr "인쇄(&P)...\tCtrl+P"
 
 msgid "Page Set&up..."
 msgstr "페이지 설정(&T)..."
@@ -597,24 +613,12 @@ msgstr "파일 인코딩(&F)..."
 msgid "Reco&mpare As"
 msgstr "다시 비교(&M)"
 
-#, c-format
-msgid "&Text"
-msgstr ""
-
 msgid "T&able"
 msgstr ""
 
 #, c-format
 msgid "&XML"
 msgstr "&XML"
-
-#, c-format
-msgid "&Binary"
-msgstr "바이너리(&B)"
-
-#, c-format
-msgid "&Image"
-msgstr "이미지(&I)"
 
 #, c-format
 msgid "&Undo\tCtrl+Z"
@@ -679,10 +683,6 @@ msgstr "이전 책갈피(&P)\tShift+F2"
 #, c-format
 msgid "&Clear All Bookmarks"
 msgstr "전체 책갈피 지우기(&C)"
-
-#, c-format
-msgid "&Go To...\tCtrl+G"
-msgstr "이동(&G)...\tCtrl+G"
 
 #, c-format
 msgid "Syntax Highlight"
@@ -1070,8 +1070,7 @@ msgstr "prediffer 없음(&N)"
 msgid "Auto prediffer"
 msgstr "자동 prediffer"
 
-#, c-format
-msgid "G&oto Diff"
+msgid "G&o to Diff"
 msgstr "차이점으로 이동(&O)"
 
 #, c-format
@@ -1081,10 +1080,6 @@ msgstr "이동된 블럭 없음(&N)"
 #, c-format
 msgid "&All Moved Blocks"
 msgstr "모든 이동된 블럭(&A)"
-
-#, c-format
-msgid "Moved Block for &Current Diff"
-msgstr "현재 차이점에 대해 이동된 블럭(&C)"
 
 #, c-format
 msgid "W&hitespaces"
@@ -1103,8 +1098,8 @@ msgid "Ig&nore all"
 msgstr "모두 무시하기(&N)"
 
 #, c-format
-msgid "Case sensi&tive"
-msgstr "대소문자 구분하기(&T)"
+msgid "Ignore &case"
+msgstr "대소문자 무시하기(&C)"
 
 #, c-format
 msgid "Igno&re carriage return differences (Windows/Unix/Mac)"
@@ -1154,8 +1149,7 @@ msgstr ""
 msgid "About WinMerge"
 msgstr "WinMerge 정보"
 
-#, c-format
-msgid "Visit the WinMerge HomePage!"
+msgid "Visit the WinMerge Homepage!"
 msgstr "WinMerge 홈페이지 방문!"
 
 #, c-format
@@ -1257,6 +1251,9 @@ msgstr "일반"
 msgid "Automatically &scroll to first difference"
 msgstr "처음 차이점으로 자동 스크롤하기(&S)"
 
+msgid "Automatically s&croll to first inline difference"
+msgstr ""
+
 msgid "Cl&ose windows with 'Esc':"
 msgstr "'Esc'로 창 닫기(&O):"
 
@@ -1335,8 +1332,7 @@ msgstr "다음 찾기(&F)"
 msgid "Find &Prev"
 msgstr "이전 찾기(&P)"
 
-#, c-format
-msgid "&Ok"
+msgid "&OK"
 msgstr "확인(&O)"
 
 #, c-format
@@ -1389,6 +1385,10 @@ msgstr "새로 만들기"
 #, c-format
 msgid "&Background color:"
 msgstr "배경 색상(&B):"
+
+#, c-format
+msgid "&Ok"
+msgstr "확인(&O)"
 
 #, c-format
 msgid "&Apply"
@@ -1631,20 +1631,17 @@ msgstr "비교된 항목 :"
 msgid "Items total:"
 msgstr "전체 항목 :"
 
-#, c-format
-msgid "Go To"
+msgid "Go to"
 msgstr "이동"
 
-#, c-format
-msgid "G&oto:"
+msgid "G&o to:"
 msgstr "이동(&O):"
 
 #, c-format
 msgid "File"
 msgstr "파일"
 
-#, c-format
-msgid "Goto what"
+msgid "Go to what"
 msgstr "이동 위치"
 
 #, c-format
@@ -1655,8 +1652,7 @@ msgstr "줄(&N)"
 msgid "&Difference"
 msgstr "차이점(&D)"
 
-#, c-format
-msgid "&Go To"
+msgid "&Go to"
 msgstr "이동(&G)"
 
 #, c-format
@@ -1683,9 +1679,8 @@ msgstr "모두 무시하기(&G)"
 msgid "Ignore blan&k lines"
 msgstr "공백 줄 무시하기(&K)"
 
-#, c-format
-msgid "Ignore &case"
-msgstr "대소문자 무시하기(&C)"
+msgid "Ignore c&omment differences"
+msgstr ""
 
 #, c-format
 msgid "E&nable moved block detection"
@@ -1700,14 +1695,6 @@ msgstr ""
 
 msgid "Enable indent &heuristic"
 msgstr ""
-
-#, c-format
-msgid "Comments"
-msgstr "코멘트"
-
-#, c-format
-msgid "Filter Comments"
-msgstr "코멘트 필터링하기"
 
 #, c-format
 msgid "Editor"
@@ -3755,15 +3742,11 @@ msgstr ""
 msgid "Folder does not exist."
 msgstr "폴더가 존재하지 않습니다."
 
-#, c-format
-msgid ""
-"Archive support is not enabled.\n"
-"All needed components (7-zip and/or Merge7z*.dll) for archive support cannot be found.\n"
-"See manual for more info about archive support and how to enable it."
+msgid "Archive support is not enabled.\nAll needed components (7-Zip and/or Merge7z*.dll) for archive support cannot be found.\nSee manual for more info about archive support and how to enable it."
 msgstr ""
 "압축 지원이 꺼져 있습니다.\n"
 "\n"
-"압축 지원에 필요한 컴포넌트(7-zip and/or Merge7z*.dll)를 찾을 수 없습니다.\n"
+"압축 지원에 필요한 컴포넌트(7-Zip and/or Merge7z*.dll)를 찾을 수 없습니다.\n"
 "압축 지원에 대한 추가 정보와 사용법은 메뉴얼을 참조하세요."
 
 #, c-format
@@ -4022,8 +4005,11 @@ msgid "<Automatic>"
 msgstr "<자동>"
 
 #, c-format
-msgid "G&oto Line %1"
+msgid "G&o to Line %1"
 msgstr "%1줄로 이동(&O)"
+
+msgid "Go to Moved Line\tCtrl+Shift+G"
+msgstr ""
 
 #, c-format
 msgid "Disabled"
@@ -4080,8 +4066,7 @@ msgstr "다른 탭 닫기(&O)"
 msgid "Enable &Auto Max Width"
 msgstr "자동 최대 너비 사용(&A)"
 
-#, c-format
-msgid "frhed is not installed"
+msgid "Frhed is not installed."
 msgstr ""
 
 #, c-format
@@ -4223,5 +4208,9 @@ msgstr ""
 
 #, c-format
 msgid "Page: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
+msgstr ""
+
+#, c-format
+msgid "Rc: (%d, %d)  "
 msgstr ""
 
