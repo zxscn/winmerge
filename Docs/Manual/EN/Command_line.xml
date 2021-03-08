@@ -31,11 +31,16 @@
       <arg choice="opt" rep="norepeat"><option>/f</option>
       <replaceable>filter</replaceable></arg>
 
+      <arg choice="opt" rep="norepeat"><option>/m</option>
+      <replaceable>compare-method</replaceable></arg>
+
       <arg><option>/x</option></arg>
 
       <arg><option>/xq</option></arg>
 
       <arg><option>/s</option></arg>
+
+      <arg><option>/sw</option></arg>
 
       <arg><option>/s-</option></arg>
 
@@ -52,6 +57,8 @@
       <arg choice="opt" rep="norepeat"><option>/wm</option></arg>
 
       <arg choice="opt" rep="norepeat"><option>/wr</option></arg>
+
+      <arg choice="opt" rep="norepeat"><option>/self-compare</option></arg>
 
       <arg><option>/minimize</option></arg>
 
@@ -161,6 +168,22 @@
     </varlistentry>
 
     <varlistentry>
+      <indexterm>
+        <primary>compare method</primary>
+        <secondary>applying in command line</secondary>
+      </indexterm>
+
+      <term><option>/m</option></term>
+      <listitem>
+        <para>Sets the compare method to use for the comparison.
+        This can be one of the keywords <userinput>Full</userinput>,
+        <userinput>Quick</userinput>, <userinput>Binary</userinput>,
+        <userinput>Date</userinput>, <userinput>SizeDate</userinput>, 
+        <userinput>Size</userinput>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
       <term><option>/x</option></term>
       <listitem>
         <para>Closes WinMerge (after displaying an information
@@ -194,6 +217,15 @@
         same instance. Without this parameter, multiple windows are allowed:
         depending on other settings, a new compare might open in the existing
         window or in a new window.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><option>/sw</option></term>
+      <listitem>
+        <para>Limit the WinMerge window to one instance as well as the option /s.
+         However, it waits for the instance displaying the window to terminate.
+        </para>
       </listitem>
     </varlistentry>
 
@@ -271,6 +303,13 @@
       <listitem>
         <para>Opens the right side as read-only. Use this
         when you don't want to change right side items in the compare.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><option>/self-compare</option></term>
+      <listitem>
+        <para>Compares the specified file with a copy of the file.</para>
       </listitem>
     </varlistentry>
 
@@ -362,8 +401,9 @@
       <listitem>
         <para>Specifies the folder, file or project file to open on the right side.</para>
 
-        <para>WinMerge cannot compare files to folders, so both path parameters
-        (<option><replaceable>leftpath</replaceable></option> and
+        <para>WinMerge cannot compare files to folders, so the path parameters
+        (<option><replaceable>leftpath</replaceable></option>,
+        <option><replaceable>middlepath</replaceable></option> and
         <option><replaceable>rightpath</replaceable></option>) must point to the
         same target type (either folders or files). If WinMerge cannot find either
         of the specified paths, it opens the Select Files or Folders dialog, where
@@ -454,5 +494,6 @@
         with a conflict file.</para>
       </listitem>
     </varlistentry>
+
   </variablelist>
 </article>

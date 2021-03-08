@@ -43,8 +43,23 @@ msgstr "Copia des de l'esquerra"
 msgid "Copy fro&m Right"
 msgstr "Copia des de la dreta"
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "&Selecciona la diferència a la línia\tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr ""
 
 #, c-format
 msgid "&Undo"
@@ -189,6 +204,9 @@ msgstr "Tria color de fons"
 msgid "&Vector Image Scaling"
 msgstr ""
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 #, c-format
 msgid "&File"
 msgstr "&Fitxer"
@@ -199,6 +217,9 @@ msgstr "&Nou\tControl+N"
 
 #, c-format
 msgid "&Text"
+msgstr ""
+
+msgid "T&able"
 msgstr ""
 
 #, c-format
@@ -479,6 +500,15 @@ msgstr "Empra el tipus de lletra del &sistema"
 msgid "Sw&ap Panes"
 msgstr "&Intercanvia les subfinestres"
 
+msgid "Swap &1st | 2nd"
+msgstr ""
+
+msgid "Swap &2nd | 3rd"
+msgstr ""
+
+msgid "Swap 1st | &3rd"
+msgstr ""
+
 #, c-format
 msgid "Com&pare Statistics..."
 msgstr "Estadístiques de &comparació..."
@@ -608,9 +638,6 @@ msgstr ""
 msgid "Reco&mpare As"
 msgstr ""
 
-msgid "T&able"
-msgstr ""
-
 #, c-format
 msgid "&XML"
 msgstr ""
@@ -717,6 +744,9 @@ msgstr ""
 
 #, c-format
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
+msgstr ""
+
+msgid "&Invert (Hide Different Lines)"
 msgstr ""
 
 #, c-format
@@ -1256,9 +1286,8 @@ msgstr "T&anca les finestres amb 'Esc':"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "&Verifica els camí automàticament al diàleg d'Obrir"
 
-#, c-format
-msgid "All&ow only one instance to run"
-msgstr "&Permet d'executar només una instància"
+msgid "Single instance mode:"
+msgstr ""
 
 #, c-format
 msgid "As&k when closing multiple windows"
@@ -1327,7 +1356,8 @@ msgstr "&Següent"
 msgid "Find &Prev"
 msgstr ""
 
-msgid "&OK"
+#, c-format
+msgid "&Ok"
 msgstr "&D'acord"
 
 #, c-format
@@ -1382,16 +1412,11 @@ msgid "&Background color:"
 msgstr ""
 
 #, c-format
-msgid "&Ok"
-msgstr "&D'acord"
-
-#, c-format
 msgid "&Apply"
 msgstr "&Aplica"
 
-#, c-format
-msgid "Linefilters"
-msgstr "Filtres de línia"
+msgid "Line Filters"
+msgstr ""
 
 #, c-format
 msgid "Enable Line Filters"
@@ -1408,6 +1433,21 @@ msgstr "Edita"
 #, c-format
 msgid "Remove"
 msgstr "Suprimeix"
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
 
 #, c-format
 msgid "Colors"
@@ -1691,6 +1731,9 @@ msgstr ""
 msgid "Enable indent &heuristic"
 msgstr ""
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 #, c-format
 msgid "Editor"
 msgstr ""
@@ -1746,9 +1789,8 @@ msgstr ""
 msgid "&Rendering Mode:"
 msgstr ""
 
-#, c-format
-msgid "Filefilters"
-msgstr "Filtres de fitxer"
+msgid "File Filters"
+msgstr ""
 
 msgid "Test..."
 msgstr "&Prova..."
@@ -2306,6 +2348,9 @@ msgstr ""
 msgid "&Enable image compare in folder compare"
 msgstr ""
 
+msgid "OCR result:"
+msgstr ""
+
 #, c-format
 msgid "&Hex View"
 msgstr ""
@@ -2434,11 +2479,11 @@ msgstr "No tornis amostrar aquest missatge."
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr ""
 
-msgid "Color Schemes"
-msgstr ""
-
 #, c-format
 msgid "Syntax"
+msgstr ""
+
+msgid "Color Schemes"
 msgstr ""
 
 msgid "Folder Compare"
@@ -2531,6 +2576,13 @@ msgstr "Fitxers HTML (*.htm,*.html)|*.htm;*.html|All Files (*.*)|*.*||"
 #, c-format
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "Fitxers XML (*.xml)|*.xml|All Files (*.*)|*.*||"
+
+msgid "File Type"
+msgstr ""
+
+#, c-format
+msgid "Extension"
+msgstr "Extensió"
 
 #, c-format
 msgid "Name"
@@ -2651,12 +2703,18 @@ msgstr ""
 msgid "Untitled right"
 msgstr "Fitxer dret sense títol"
 
+msgid "Base File"
+msgstr ""
+
 #, c-format
 msgid "Theirs File"
 msgstr ""
 
 #, c-format
 msgid "Mine File"
+msgstr ""
+
+msgid "Original File"
 msgstr ""
 
 #, c-format
@@ -2836,6 +2894,10 @@ msgstr ""
 "El fitxer original no es canviarà.\n"
 "\n"
 "Voleu desar la versió desempaquetada en un altre fitxer?"
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
 
 #, c-format
 msgid ""
@@ -3078,10 +3140,6 @@ msgstr "Data dreta"
 #, c-format
 msgid "Middle Date"
 msgstr ""
-
-#, c-format
-msgid "Extension"
-msgstr "Extensió"
 
 #, c-format
 msgid "Left Size"
@@ -3785,6 +3843,18 @@ msgstr ""
 msgid "\nAuto Merge (Ctrl+Alt+M)"
 msgstr ""
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr "El desempaquetador adaptat s'aplica a ambdós fitxers (només hi cal l'extensió en un fitxer)."
 
@@ -3858,9 +3928,6 @@ msgstr ""
 msgid "Batch"
 msgstr ""
 
-msgid "Lua"
-msgstr ""
-
 #, c-format
 msgid "Portable Object"
 msgstr ""
@@ -3871,10 +3938,6 @@ msgstr ""
 
 #, c-format
 msgid "Shell"
-msgstr ""
-
-#, c-format
-msgid "VHDL"
 msgstr ""
 
 #, c-format
@@ -4033,5 +4096,36 @@ msgstr ""
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+#, c-format
+msgid "Allow only one instance to run"
+msgstr "Permet d'executar només una instància"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

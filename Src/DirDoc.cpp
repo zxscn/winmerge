@@ -21,6 +21,7 @@
 #include "UnicodeString.h"
 #include "CompareStats.h"
 #include "FilterList.h"
+#include "SubstitutionList.h"
 #include "DirView.h"
 #include "DirFrame.h"
 #include "MainFrm.h"
@@ -30,6 +31,7 @@
 #include "OptionsMgr.h"
 #include "OptionsDiffOptions.h"
 #include "LineFiltersList.h"
+#include "SubstitutionFiltersList.h"
 #include "FileFilterHelper.h"
 #include "unicoder.h"
 #include "DirActions.h"
@@ -199,6 +201,20 @@ void CDirDoc::LoadLineFilterList(CDiffContext *pCtxt)
 		pCtxt->m_pFilterList->AddRegExp(*it);
 }
 
+void CDirDoc::LoadSubstitutionFiltersList(CDiffContext* pCtxt)
+{
+	ASSERT(pCtxt != nullptr);
+
+	bool SubstitutionFiltersEnabled = theApp.m_pSubstitutionFiltersList->GetEnabled();
+	if (!SubstitutionFiltersEnabled || theApp.m_pSubstitutionFiltersList->GetCount() == 0)
+	{
+		pCtxt->m_pSubstitutionList.reset();
+		return;
+	}
+
+	pCtxt->m_pSubstitutionList = theApp.m_pSubstitutionFiltersList->MakeSubstitutionList();
+}
+
 void CDirDoc::DiffThreadCallback(int& state)
 {
 	PostMessage(m_pDirView->GetSafeHwnd(), MSG_UI_UPDATE, state, false);
@@ -207,6 +223,7 @@ void CDirDoc::DiffThreadCallback(int& state)
 void CDirDoc::InitDiffContext(CDiffContext *pCtxt)
 {
 	LoadLineFilterList(pCtxt);
+	LoadSubstitutionFiltersList(pCtxt);
 
 	DIFFOPTIONS options = {0};
 	Options::DiffOptions::Load(GetOptionsMgr(), options);
@@ -655,6 +672,17 @@ void CDirDoc::ApplyDisplayRoot(int nIndex, String &sText)
 {
 	if (m_pTempPathContext != nullptr)
 	{
+		if (sText.find(m_pTempPathContext->m_strRoot[nIndex]) == String::npos)
+		{
+			for (int pane = 0; pane < m_nDirs; ++pane)
+			{
+				if (sText.find(m_pTempPathContext->m_strRoot[pane]) != String::npos)
+				{
+					nIndex = pane;
+					break;
+				}
+			}
+		}
 		sText.erase(0, m_pTempPathContext->m_strRoot[nIndex].length());
 		sText.insert(0, m_pTempPathContext->m_strDisplayRoot[nIndex]);
 	}
@@ -774,6 +802,68 @@ void CDirDoc::MoveToPrevDiff(IMergeDoc *pMergeDoc)
 	}
 }
 
+void CDirDoc::MoveToFirstFile(IMergeDoc* pMergeDoc)
+{
+	if (m_pDirView == nullptr)
+		return;
+	if (AfxMessageBox(_("Do you want to move to the first file?").c_str(), MB_YESNO | MB_DONT_ASK_AGAIN) == IDYES)
+	{
+		pMergeDoc->CloseNow();
+		m_pDirView->OpenFirstFile();
+		GetMainFrame()->OnUpdateFrameTitle(FALSE);
+	}
+}
+
+void CDirDoc::MoveToNextFile(IMergeDoc* pMergeDoc)
+{
+	if (m_pDirView == nullptr)
+		return;
+	if (AfxMessageBox(_("Do you want to move to the next file?").c_str(), MB_YESNO | MB_DONT_ASK_AGAIN) == IDYES)
+	{
+		pMergeDoc->CloseNow();
+		m_pDirView->OpenNextFile();
+		GetMainFrame()->OnUpdateFrameTitle(FALSE);
+	}
+}
+
+void CDirDoc::MoveToPrevFile(IMergeDoc* pMergeDoc)
+{
+	if (m_pDirView == nullptr)
+		return;
+	if (AfxMessageBox(_("Do you want to move to the previous file?").c_str(), MB_YESNO | MB_DONT_ASK_AGAIN) == IDYES)
+	{
+		pMergeDoc->CloseNow();
+		m_pDirView->OpenPrevFile();
+		GetMainFrame()->OnUpdateFrameTitle(FALSE);
+	}
+}
+
+void CDirDoc::MoveToLastFile(IMergeDoc* pMergeDoc)
+{
+	if (m_pDirView == nullptr)
+		return;
+	if (AfxMessageBox(_("Do you want to move to the last file?").c_str(), MB_YESNO | MB_DONT_ASK_AGAIN) == IDYES)
+	{
+		pMergeDoc->CloseNow();
+		m_pDirView->OpenLastFile();
+		GetMainFrame()->OnUpdateFrameTitle(FALSE);
+	}
+}
+
+bool CDirDoc::IsFirstFile()
+{
+	if (m_pDirView == nullptr)
+		return true;
+	return m_pDirView->IsFirstFile();
+}
+
+bool CDirDoc::IsLastFile()
+{
+	if (m_pDirView == nullptr)
+		return true;
+	return m_pDirView->IsLastFile();
+}
+
 bool CDirDoc::CompareFilesIfFilesAreLarge(int nFiles, const FileLocation ifileloc[])
 {
 	DIFFITEM di;
@@ -838,7 +928,12 @@ bool CDirDoc::CompareFilesIfFilesAreLarge(int nFiles, const FileLocation ifilelo
 			}
 		}
 	}
-	int ans = AfxMessageBox(msg.c_str(), MB_YESNOCANCEL | MB_ICONQUESTION | MB_DONT_ASK_AGAIN);
+	CMessageBoxDialog dlg(
+		m_pDirView ? m_pDirView->GetParentFrame() : nullptr,
+		msg.c_str(), _T(""),
+		MB_YESNOCANCEL | MB_ICONQUESTION | MB_DONT_ASK_AGAIN, 0U,
+		_T("CompareLargeFiles"));
+	INT_PTR ans = dlg.DoModal();
 	if (ans == IDCANCEL)
 		return true;
 	else if (ans == IDNO)

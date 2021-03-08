@@ -13,6 +13,7 @@
 #include "OptionsDiffOptions.h"
 #include "OptionsDiffColors.h"
 #include "OptionsDirColors.h"
+#include "OptionsEditorSyntax.h"
 #include "OptionsFont.h"
 #include "DiffWrapper.h" // CMP_CONTENT
 #include "paths.h"
@@ -21,7 +22,6 @@
 #include "Constants.h"
 
 // Functions to copy values set by installer from HKLM to HKCU.
-static void CopyHKLMValues();
 static bool OpenHKLM(HKEY *key, LPCTSTR relpath = nullptr);
 static bool OpenHKCU(HKEY *key, LPCTSTR relpath = nullptr);
 static void CopyFromLMtoCU(HKEY lmKey, HKEY cuKey, LPCTSTR valname);
@@ -75,6 +75,7 @@ void Init(COptionsMgr *pOptions)
 	pOptions->InitOption(OPT_AUTO_COMPLETE_SOURCE, (int)1);
 	pOptions->InitOption(OPT_VIEW_FILEMARGIN, false);
 	pOptions->InitOption(OPT_DIFF_CONTEXT, (int)-1);
+	pOptions->InitOption(OPT_INVERT_DIFF_CONTEXT, false);
 	pOptions->InitOption(OPT_SPLIT_HORIZONTALLY, false);
 	pOptions->InitOption(OPT_RENDERING_MODE, -1);
 	pOptions->InitOption(OPT_FILE_SIZE_THRESHOLD, 64*1024*1024);
@@ -111,7 +112,7 @@ void Init(COptionsMgr *pOptions)
 
 	pOptions->InitOption(OPT_EXT_EDITOR_CMD, paths::ConcatPath(env::GetWindowsDirectory(), _T("NOTEPAD.EXE")));
 	pOptions->InitOption(OPT_USE_RECYCLE_BIN, true);
-	pOptions->InitOption(OPT_SINGLE_INSTANCE, false);
+	pOptions->InitOption(OPT_SINGLE_INSTANCE, 0);
 	pOptions->InitOption(OPT_MERGE_MODE, false);
 	// OPT_WORDDIFF_HIGHLIGHT is initialized above
 	pOptions->InitOption(OPT_BREAK_ON_WORDS, false);
@@ -159,12 +160,15 @@ void Init(COptionsMgr *pOptions)
 	pOptions->InitOption(OPT_CMP_IMG_THRESHOLD, 0);
 	pOptions->InitOption(OPT_CMP_IMG_INSERTIONDELETIONDETECTION_MODE, 0);
 	pOptions->InitOption(OPT_CMP_IMG_VECTOR_IMAGE_ZOOM_RATIO, 1000);
+	pOptions->InitOption(OPT_CMP_IMG_OCR_RESULT_TYPE, 0);
 
 	pOptions->InitOption(OPT_PROJECTS_PATH, _T(""));
 	pOptions->InitOption(OPT_USE_SYSTEM_TEMP_PATH, true);
 	pOptions->InitOption(OPT_CUSTOM_TEMP_PATH, _T(""));
 
 	pOptions->InitOption(OPT_LINEFILTER_ENABLED, false);
+	pOptions->InitOption(OPT_SUBSTITUTION_FILTERS_ENABLED, false);
+
 	pOptions->InitOption(OPT_FILEFILTER_CURRENT, _T("*.*"));
 	// CMainFrame initializes this when it is empty.
 	pOptions->InitOption(OPT_FILTER_USERPATH, _T(""));
@@ -193,8 +197,8 @@ void Init(COptionsMgr *pOptions)
 	pOptions->InitOption(OPT_PLUGINS_ENABLED, true);
 	pOptions->InitOption(OPT_PLUGINS_DISABLED_LIST, _T(""));
 	pOptions->InitOption(OPT_PLUGINS_CUSTOM_FILTERS_LIST, _T(""));
-	pOptions->InitOption(OPT_PLUGINS_UNPACKER_MODE, PLUGIN_MANUAL);
-	pOptions->InitOption(OPT_PLUGINS_PREDIFFER_MODE, PLUGIN_MANUAL);
+	pOptions->InitOption(OPT_PLUGINS_UNPACKER_MODE, static_cast<int>(PLUGIN_MODE::PLUGIN_MANUAL));
+	pOptions->InitOption(OPT_PLUGINS_PREDIFFER_MODE, static_cast<int>(PLUGIN_MODE::PLUGIN_MANUAL));
 	pOptions->InitOption(OPT_PLUGINS_UNPACK_DONT_CHECK_EXTENSION, false);
 
 	pOptions->InitOption(OPT_PATCHCREATOR_PATCH_STYLE, 0);
@@ -218,6 +222,7 @@ void Init(COptionsMgr *pOptions)
 	Options::DiffOptions::SetDefaults(pOptions);
 	Options::DiffColors::SetDefaults(pOptions);
 	Options::DirColors::SetDefaults(pOptions);
+	Options::EditorSyntax::SetDefaults(pOptions);
 	Options::Font::SetDefaults(pOptions);
 }
 

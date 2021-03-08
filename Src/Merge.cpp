@@ -38,6 +38,7 @@
 #include "paths.h"
 #include "FileFilterHelper.h"
 #include "LineFiltersList.h"
+#include "SubstitutionFiltersList.h"
 #include "SyntaxColors.h"
 #include "CCrystalTextMarkers.h"
 #include "OptionsSyntaxColors.h"
@@ -105,6 +106,7 @@ CMergeApp::CMergeApp() :
 , m_bEscShutdown(false)
 , m_bExitIfNoDiff(MergeCmdLineInfo::Disabled)
 , m_pLineFilters(new LineFiltersList())
+, m_pSubstitutionFiltersList(new SubstitutionFiltersList())
 , m_pSyntaxColors(new SyntaxColors())
 , m_pMarkers(new CCrystalTextMarkers())
 , m_bMergingMode(false)
@@ -220,8 +222,8 @@ BOOL CMergeApp::InitInstance()
 	// This is the name of the company of the original author (Dean Grimm)
 	SetRegistryKey(_T("Thingamahoochie"));
 
-	bool bSingleInstance = cmdInfo.m_bSingleInstance.has_value() ?
-		*cmdInfo.m_bSingleInstance : GetOptionsMgr()->GetBool(OPT_SINGLE_INSTANCE);
+	int nSingleInstance = cmdInfo.m_nSingleInstance.has_value() ?
+		*cmdInfo.m_nSingleInstance : GetOptionsMgr()->GetInt(OPT_SINGLE_INSTANCE);
 
 	// Create exclusion mutex name
 	TCHAR szDesktopName[MAX_PATH] = _T("Win9xDesktop");
@@ -236,7 +238,7 @@ BOOL CMergeApp::InitInstance()
 	HANDLE hMutex = CreateMutex(nullptr, FALSE, szMutexName);
 	if (hMutex != nullptr)
 		WaitForSingleObject(hMutex, INFINITE);
-	if (bSingleInstance && GetLastError() == ERROR_ALREADY_EXISTS)
+	if (nSingleInstance != 0 && GetLastError() == ERROR_ALREADY_EXISTS)
 	{
 		// Activate previous instance and send commandline to it
 		HWND hWnd = FindWindow(CMainFrame::szClassName, nullptr);
@@ -251,6 +253,14 @@ BOOL CMergeApp::InitInstance()
 			{
 				ReleaseMutex(hMutex);
 				CloseHandle(hMutex);
+				if (nSingleInstance > 1)
+				{
+					DWORD dwProcessId = 0;
+					GetWindowThreadProcessId(hWnd, &dwProcessId);
+					HANDLE hProcess = OpenProcess(SYNCHRONIZE, FALSE, dwProcessId);
+					if (hProcess)
+						WaitForSingleObject(hProcess, INFINITE);
+				}
 				return FALSE;
 			}
 		}
@@ -306,6 +316,9 @@ BOOL CMergeApp::InitInstance()
 		if (!oldFilter.empty())
 			m_pLineFilters->Import(oldFilter);
 	}
+
+	if (m_pSubstitutionFiltersList != nullptr)
+		m_pSubstitutionFiltersList->Initialize(GetOptionsMgr());
 
 	// Check if filter folder is set, and create it if not
 	String pathMyFolders = GetOptionsMgr()->GetString(OPT_FILTER_USERPATH);
@@ -457,7 +470,7 @@ int CMergeApp::ExitInstance()
 	ClearTempfolder(temp);
 
 	// Cleanup left over tempfiles from previous instances.
-	// Normally this should not neet to do anything - but if for some reason
+	// Normally this should not need to do anything - but if for some reason
 	// WinMerge did not delete temp files this makes sure they are removed.
 	CleanupWMtemp();
 
@@ -619,6 +632,10 @@ bool CMergeApp::ParseArgsAndDoOpen(MergeCmdLineInfo& cmdInfo, CMainFrame* pMainF
 		UpdateDefaultCodepage(2,cmdInfo.m_nCodepage);
 	}
 
+	// Set compare method
+	if (cmdInfo.m_nCompMethod.has_value())
+		GetOptionsMgr()->Set(OPT_CMP_METHOD, *cmdInfo.m_nCompMethod);
+
 	// Unless the user has requested to see WinMerge's usage open files for
 	// comparison.
 	if (cmdInfo.m_bShowUsage)
@@ -665,7 +682,13 @@ bool CMergeApp::ParseArgsAndDoOpen(MergeCmdLineInfo& cmdInfo, CMainFrame* pMainF
 		else if (cmdInfo.m_Files.GetSize() == 1)
 		{
 			String sFilepath = cmdInfo.m_Files[0];
-			if (IsProjectFile(sFilepath))
+			if (cmdInfo.m_bSelfCompare)
+			{
+				strDesc[0] = cmdInfo.m_sLeftDesc;
+				strDesc[1] = cmdInfo.m_sRightDesc;
+				bCompared = pMainFrame->DoSelfCompare(sFilepath, strDesc);
+			}
+			else if (IsProjectFile(sFilepath))
 			{
 				bCompared = LoadAndOpenProjectFile(sFilepath);
 			}

@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinMerge\n"
 "Report-Msgid-Bugs-To: https://bugs.winmerge.org/\n"
-"POT-Creation-Date: 2020-11-25 21:32+0000\n"
-"PO-Revision-Date: 2020-11-29 09:09+0200\n"
+"POT-Creation-Date: 2021-01-27 23:46+0000\n"
+"PO-Revision-Date: 2021-01-31 00:00+0000\n"
 "Last-Translator: wvxwxvw\n"
 "Language-Team: Russian <winmerge-translate@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -40,8 +40,23 @@ msgstr "Копировать слева"
 msgid "Copy fro&m Right"
 msgstr "Копировать справа"
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "&Выбрать отличие\tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr "Добавить это изменение в &фильтры замены"
 
 msgid "&Undo"
 msgstr "&Отменить"
@@ -154,13 +169,16 @@ msgid "&Horizontal Wipe"
 msgstr "Горизонтальное стирание"
 
 msgid "&Rectangle Select"
-msgstr ""
+msgstr "&Прямоугольный выбор"
 
 msgid "&Set Background Color"
 msgstr "Цвет фона"
 
 msgid "&Vector Image Scaling"
 msgstr "&Масштаб изображений"
+
+msgid "Compare Extracted &Text From Image"
+msgstr "Сравнить извлеченный из изображения текст"
 
 msgid "&File"
 msgstr "&Файл"
@@ -170,6 +188,9 @@ msgstr "Создать"
 
 msgid "&Text"
 msgstr "Текст"
+
+msgid "T&able"
+msgstr "Таблица"
 
 msgid "&Binary"
 msgstr "Двоичный"
@@ -384,6 +405,15 @@ msgstr "Шрифт по &умолчанию"
 msgid "Sw&ap Panes"
 msgstr "Поменять панели местами"
 
+msgid "Swap &1st | 2nd"
+msgstr "Поменять &1-й | 2-й"
+
+msgid "Swap &2nd | 3rd"
+msgstr "Поменять &2-й | 3-й"
+
+msgid "Swap 1st | &3rd"
+msgstr "Поменять 1-й | &3-й"
+
 msgid "Com&pare Statistics..."
 msgstr "Статистика сравнения..."
 
@@ -483,9 +513,6 @@ msgstr "Кодировка файла..."
 msgid "Reco&mpare As"
 msgstr "Пересравнить как"
 
-msgid "T&able"
-msgstr "Таблица"
-
 msgid "&XML"
 msgstr "&XML"
 
@@ -566,6 +593,9 @@ msgstr "&9 строк"
 
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
 msgstr "Переключить все и 0-9 строк\tCtrl+D"
+
+msgid "&Invert (Hide Different Lines)"
+msgstr "Инвертировать (скрыть отличные строки)"
 
 msgid "&Lock Panes"
 msgstr "Заблокировать панели"
@@ -995,8 +1025,8 @@ msgstr "За&крывать окна клавишей 'Esc':"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "Автопроверка пути в диалоге открытия файлов"
 
-msgid "All&ow only one instance to run"
-msgstr "&Разрешить запуск только одной копии"
+msgid "Single instance mode:"
+msgstr ""
 
 msgid "As&k when closing multiple windows"
 msgstr "Подтверждать закрытие окон"
@@ -1049,8 +1079,8 @@ msgstr "Следующее"
 msgid "Find &Prev"
 msgstr "Предыдущее"
 
-msgid "&OK"
-msgstr "&OK"
+msgid "&Ok"
+msgstr "&Ok"
 
 msgid "Replace"
 msgstr "Заменить"
@@ -1091,13 +1121,10 @@ msgstr "Создать"
 msgid "&Background color:"
 msgstr "Цвет фона:"
 
-msgid "&Ok"
-msgstr "&Ok"
-
 msgid "&Apply"
 msgstr "&Применить"
 
-msgid "Linefilters"
+msgid "Line Filters"
 msgstr "Строковые фильтры"
 
 msgid "Enable Line Filters"
@@ -1111,6 +1138,21 @@ msgstr "Изменить"
 
 msgid "Remove"
 msgstr "Удалить"
+
+msgid "Substitution Filters"
+msgstr "Фильтры замены"
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr "Изменения в тексте соответсвующие парам, в списке ниже, будут игнорироваться"
+
+msgid "Enable"
+msgstr "Включено"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Clear"
+msgstr "Очистить"
 
 msgid "Colors"
 msgstr "Цвета"
@@ -1334,6 +1376,9 @@ msgstr "Алгоритм сравнения (эксперимент.):"
 msgid "Enable indent &heuristic"
 msgstr "Включать эвристику отступов"
 
+msgid "Completely unhighlight the ignored differences"
+msgstr "Вообще не подсвечивать игнорируемые различия"
+
 msgid "Editor"
 msgstr "Редактор"
 
@@ -1376,7 +1421,7 @@ msgstr "Символы разрыва слов:"
 msgid "&Rendering Mode:"
 msgstr "Режим отрисовки:"
 
-msgid "Filefilters"
+msgid "File Filters"
 msgstr "Фильтры файлов"
 
 msgid "Test..."
@@ -1816,6 +1861,9 @@ msgstr "Шаблоны изображений:"
 msgid "&Enable image compare in folder compare"
 msgstr "Cравнивать изображения в папках сравнения"
 
+msgid "OCR result:"
+msgstr "Результат OCR"
+
 msgid "&Hex View"
 msgstr "&Hex"
 
@@ -1915,11 +1963,11 @@ msgstr "Не показывать &больше."
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr "Чтобы снова показывать это сообщение, нажмите кнопку Сброс на странице настроек Общие."
 
-msgid "Color Schemes"
-msgstr "Цветовая схема"
-
 msgid "Syntax"
 msgstr "Синтаксис"
+
+msgid "Color Schemes"
+msgstr "Цветовая схема"
 
 msgid "Folder Compare"
 msgstr "Сравнение папок"
@@ -1990,6 +2038,12 @@ msgstr "Файлы HTML (*.htm,*.html)|*.htm;*.html|Все файлы (*.*)|*.*|
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "Файлы XML (*.xml)|*.xml|Все файлы (*.*)|*.*||"
 
+msgid "File Type"
+msgstr ""
+
+msgid "Extension"
+msgstr "Расширение"
+
 msgid "Name"
 msgstr "Имя"
 
@@ -2056,11 +2110,17 @@ msgstr "Безымянный посередине"
 msgid "Untitled right"
 msgstr "Безымянный справа"
 
+msgid "Base File"
+msgstr "Базовый файл"
+
 msgid "Theirs File"
 msgstr "Их файл"
 
 msgid "Mine File"
 msgstr "Мой файл"
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2188,11 +2248,15 @@ msgstr "Сбой сохранения файла.\n%1\n%2\nХотите:\n\t- и
 
 #, c-format
 msgid "Plugin '%2' cannot pack your changes to the left file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
-msgstr "Плагин '%2' не может упаковать изменения обратно в файл слева '%1'.\n\nИсходный файл не будет изменен.\n\nСохранить распакованную версию в другой файл?"
+msgstr "Плагин '%2' не может упаковать ваши изменения из левого файла обратно в '%1'.\n\nИсходный файл не будет изменен.\n\nСохранить распакованную версию в другой файл?"
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr "Плагин '%2' не может упаковать ваши изменения из среднего файла обратно в '%1'.\n\nИсходный файл не будет изменен.\n\nСохранить распакованную версию в другой файл?"
 
 #, c-format
 msgid "Plugin '%2' cannot pack your changes to the right file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
-msgstr "Плагин '%2' не может упаковать изменения обратно в файл справа '%1'.\n\nИсходный файл не будет изменен.\n\nСохранить распакованную версию в другой файл?"
+msgstr "Плагин '%2' не может упаковать ваши изменения из правого файла обратно в '%1'.\n\nИсходный файл не будет изменен.\n\nСохранить распакованную версию в другой файл?"
 
 #, c-format
 msgid "Another application has updated file\n%1\nsince WinMerge loaded it.\n\nOverwrite changed file?"
@@ -2366,9 +2430,6 @@ msgstr "Дата справа"
 
 msgid "Middle Date"
 msgstr "Дата посередине"
-
-msgid "Extension"
-msgstr "Расширение"
 
 msgid "Left Size"
 msgstr "Размер слева"
@@ -2911,6 +2972,18 @@ msgstr "\nВсе налево"
 msgid "\nAuto Merge (Ctrl+Alt+M)"
 msgstr "\nАвто объединение (Ctrl+Alt+M)"
 
+msgid "\nFirst File"
+msgstr "\nПервый файл"
+
+msgid "\nNext File"
+msgstr "\nСледующий файл"
+
+msgid "\nLast File"
+msgstr "\nПоследний файл"
+
+msgid "\nPrevious File"
+msgstr "\nПредыдущий файл"
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr "Автоматический подбор распаковщика (укажите расширение хотя бы у одного из файлов)."
 
@@ -2971,9 +3044,6 @@ msgstr "Без выделения"
 msgid "Batch"
 msgstr "Пакет"
 
-msgid "Lua"
-msgstr "Библиотека Lua"
-
 msgid "Portable Object"
 msgstr "Портативный объект"
 
@@ -2982,9 +3052,6 @@ msgstr "Ресурсы"
 
 msgid "Shell"
 msgstr "Оболочка"
-
-msgid "VHDL"
-msgstr "VHDL"
 
 msgid "Close &Left Tabs"
 msgstr "Закрыть вкладки слева"
@@ -3136,5 +3203,35 @@ msgstr "Страница: %d/%d  Масштаб: %d%%  %dx%dpx  %dbpp"
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr "<Редактировать здесь>"
+
+msgid "No differences to select found"
+msgstr "Никаких отличий для выбора не найдено"
+
+msgid "No differences found to add as substitution filter"
+msgstr "Никаких отличий не найдено для добавления в фильтр замены"
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr "Эта пара уже присутствует в списке фильтров замены"
+
+msgid "Add this change to Substitution Filters?"
+msgstr "Добавить это изменение в фильтры замены?"
+
+msgid "Text only"
+msgstr "Только текст"
+
+msgid "Line-by-line position and text"
+msgstr "Построчная позиция и текст"
+
+msgid "Word-by-word position and text"
+msgstr "Пословная позиция и текст"
+
+msgid "Allow only one instance to run"
+msgstr "Разрешить запуск только одной копии"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

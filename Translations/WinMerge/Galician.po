@@ -2,7 +2,8 @@
 # Released under the "GNU General Public License"
 #
 # Translators:
-# * Medulio <medulio@ciberirmandade.org>
+# * Medulio <medulio at ciberirmandade.org>
+# * qosobrin (LMS)
 #
 # ID line follows -- this is updated by SVN
 # $Id: Galician.po 7556 2011-08-19 15:07:03Z sdottaka $
@@ -12,9 +13,9 @@ msgstr ""
 "Project-Id-Version: WinMerge\n"
 "Report-Msgid-Bugs-To: https://bugs.winmerge.org/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-11-28 16:54+0100\n"
+"PO-Revision-Date: 2021-02-27 18:11+0100\n"
 "Last-Translator: Luis A. Martínez <luis.a.martinez@gmail.com>\n"
-"Language-Team: Galician-CiberIrmandade <traducions@ciberirmandade.org>\n"
+"Language-Team: LAMS\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,8 +45,23 @@ msgstr "Copiar da &esquerda"
 msgid "Copy fro&m Right"
 msgstr "Copiar da &dereita"
 
+msgid "Copy Selected Line(s) to Right"
+msgstr "Copiar liñas seleccionadas para a dereita"
+
+msgid "Copy Selected Line(s) to Left"
+msgstr "Copiar liñas seleccionadas para a esquerda"
+
+msgid "Copy Selected Line(s) from Left"
+msgstr "Copiar liñas seleccionadas da esquerda"
+
+msgid "Copy Selected Line(s) from Right"
+msgstr "Copiar liñas seleccionadas da dereita"
+
 msgid "&Select Line Difference\tF4"
 msgstr "&Seleccionar a diferenza entre liñas\tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr "Engadir este cambio aos &Filtros de substitución"
 
 #, c-format
 msgid "&Undo"
@@ -181,7 +197,7 @@ msgid "&Horizontal Wipe"
 msgstr "Limpeza &horizontal"
 
 msgid "&Rectangle Select"
-msgstr ""
+msgstr "Seleccionar &rectángulo"
 
 #, c-format
 msgid "&Set Background Color"
@@ -189,6 +205,9 @@ msgstr "Es&tablecer cor de fondo"
 
 msgid "&Vector Image Scaling"
 msgstr "&Escalado de imaxe vectorial"
+
+msgid "Compare Extracted &Text From Image"
+msgstr "Comparar o &Text extraído da imaxe"
 
 #, c-format
 msgid "&File"
@@ -201,6 +220,9 @@ msgstr "&Novo"
 #, c-format
 msgid "&Text"
 msgstr "&Texto"
+
+msgid "T&able"
+msgstr "Tábo&a"
 
 #, c-format
 msgid "&Binary"
@@ -480,6 +502,15 @@ msgstr "Empregar fonte predef&inida"
 msgid "Sw&ap Panes"
 msgstr "Interc&ambiar paneis"
 
+msgid "Swap &1st | 2nd"
+msgstr "Intercambiar &1º | 2º"
+
+msgid "Swap &2nd | 3rd"
+msgstr "Intercambiar &2º | 3º"
+
+msgid "Swap 1st | &3rd"
+msgstr "Intercambiar 1º | &3º"
+
 #, c-format
 msgid "Com&pare Statistics..."
 msgstr "Estatísticas da comparación…"
@@ -609,9 +640,6 @@ msgstr "Codificación do ar&quivo…"
 msgid "Reco&mpare As"
 msgstr "Volver comparar como"
 
-msgid "T&able"
-msgstr "Tábo&a"
-
 #, c-format
 msgid "&XML"
 msgstr "&XML"
@@ -719,6 +747,9 @@ msgstr "&9 Liñas"
 #, c-format
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
 msgstr "&Conmutar todas e 0-9 liñas\tCtrl+D"
+
+msgid "&Invert (Hide Different Lines)"
+msgstr "&Invertir (Ocultar liñas diferentes)"
 
 #, c-format
 msgid "&Lock Panes"
@@ -1257,9 +1288,8 @@ msgstr "Pe&char as ventás con 'Esc':"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "&Verificar automaticamente as rutas no diálogo Abrir"
 
-#, c-format
-msgid "All&ow only one instance to run"
-msgstr "Per&mitir executar só unha instancia"
+msgid "Single instance mode:"
+msgstr "Modo de instancia única"
 
 #, c-format
 msgid "As&k when closing multiple windows"
@@ -1328,8 +1358,9 @@ msgstr "&Buscar seguinte"
 msgid "Find &Prev"
 msgstr "Buscar &anterior"
 
-msgid "&OK"
-msgstr "&OK"
+#, c-format
+msgid "&Ok"
+msgstr "&Aceptar"
 
 #, c-format
 msgid "Replace"
@@ -1383,15 +1414,10 @@ msgid "&Background color:"
 msgstr "Cor de &fondo:"
 
 #, c-format
-msgid "&Ok"
-msgstr "&Aceptar"
-
-#, c-format
 msgid "&Apply"
 msgstr "&Aplicar"
 
-#, c-format
-msgid "Linefilters"
+msgid "Line Filters"
 msgstr "Filtros de liña"
 
 #, c-format
@@ -1409,6 +1435,21 @@ msgstr "Editar"
 #, c-format
 msgid "Remove"
 msgstr "Eliminar"
+
+msgid "Substitution Filters"
+msgstr "Filtros de substitución"
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr "Os cambios que aparecen nos paneis como os pares que se amosan máis abaixe serán ignorados ou marcados como non significantes. Non afecta aos Patches."
+
+msgid "Enable"
+msgstr "Activar"
+
+msgid "Add"
+msgstr "Engadir"
+
+msgid "Clear"
+msgstr "Limpar"
 
 #, c-format
 msgid "Colors"
@@ -1692,6 +1733,9 @@ msgstr "Algoritmo de diferenciación (exper.):"
 msgid "Enable indent &heuristic"
 msgstr "Activar sangrado &heurístico"
 
+msgid "Completely unhighlight the ignored differences"
+msgstr "Desmarcar por completo as diferenzas ignoradas"
+
 #, c-format
 msgid "Editor"
 msgstr "Editor"
@@ -1747,9 +1791,8 @@ msgstr "Caracteres de separación de palabra:"
 msgid "&Rendering Mode:"
 msgstr "Modo de &renderizado:"
 
-#, c-format
-msgid "Filefilters"
-msgstr "Filtros de arquivos"
+msgid "File Filters"
+msgstr "Filtros de ficheiro"
 
 msgid "Test..."
 msgstr "Probar…"
@@ -2319,6 +2362,9 @@ msgstr "&Patróns de ficheiros de imaxe:"
 msgid "&Enable image compare in folder compare"
 msgstr "&Activar a comparación de imaxes na comparación de cartafoles"
 
+msgid "OCR result:"
+msgstr "Resultado de OCR:"
+
 #, c-format
 msgid "&Hex View"
 msgstr "Visor &Hex"
@@ -2499,12 +2545,12 @@ msgstr "Non amosar esta &mensaxe de novo."
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr "Para a ver esta caixa de mensaxe outra vez, preme no botón Restaurar na páxina Xeral do diálogo de Opcións."
 
-msgid "Color Schemes"
-msgstr "Esquemas de cores"
-
 #, c-format
 msgid "Syntax"
 msgstr "Sintaxe"
+
+msgid "Color Schemes"
+msgstr "Esquemas de cores"
 
 msgid "Folder Compare"
 msgstr "Comparar cartafoles"
@@ -2596,6 +2642,13 @@ msgstr "Arquivos HTML (*.htm,*.html)|*.htm;*.html|Todos os arquivos (*.*)|*.*||"
 #, c-format
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "Arquivos XML (*.xml)|*.xml|Todos os arquivos(*.*)|*.*||"
+
+msgid "File Type"
+msgstr "Tipo de ficheiro"
+
+#, c-format
+msgid "Extension"
+msgstr "Extensión"
 
 #, c-format
 msgid "Name"
@@ -2722,6 +2775,9 @@ msgstr "Centro sen título"
 msgid "Untitled right"
 msgstr "Lado dereito sen título"
 
+msgid "Base File"
+msgstr "Arquivo base"
+
 #, c-format
 msgid "Theirs File"
 msgstr "Arquivo Theirs"
@@ -2729,6 +2785,9 @@ msgstr "Arquivo Theirs"
 #, c-format
 msgid "Mine File"
 msgstr "Arquivo Mine"
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2923,6 +2982,20 @@ msgid ""
 "Do you want to save the unpacked version to another file?"
 msgstr ""
 "O complemento '%2' non puido empaquetar os cambios no arquivo esquerdo en '%1'.\n"
+"\n"
+"O arquivo orixinal non será cambiado.\n"
+"\n"
+"Desexas gardar a versión desempaquetada noutro arquivo?"
+
+#, c-format
+msgid ""
+"Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n"
+"\n"
+"The original file will not be changed.\n"
+"\n"
+"Do you want to save the unpacked version to another file?"
+msgstr ""
+"O complemento '%2' non puido empaquetar os cambios no arquivo central en '%1'.\n"
 "\n"
 "O arquivo orixinal non será cambiado.\n"
 "\n"
@@ -3185,10 +3258,6 @@ msgstr "Data dereita"
 #, c-format
 msgid "Middle Date"
 msgstr "Data centro"
-
-#, c-format
-msgid "Extension"
-msgstr "Extensión"
 
 #, c-format
 msgid "Left Size"
@@ -3988,6 +4057,34 @@ msgstr ""
 "\n"
 "Automesturar (Ctrl+Alt+M)"
 
+msgid ""
+"\n"
+"First File"
+msgstr ""
+"\n"
+"Primeiro arquivo"
+
+msgid ""
+"\n"
+"Next File"
+msgstr ""
+"\n"
+"Seguinte arquivo"
+
+msgid ""
+"\n"
+"Last File"
+msgstr ""
+"\n"
+"Derradeiro arquivo"
+
+msgid ""
+"\n"
+"Previous File"
+msgstr ""
+"\n"
+"Anterior arquivo"
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr "O desempaquetador escollido utilízase con ambos arquivos (unicamente un arquivo precisa a extensión)."
 
@@ -4065,9 +4162,6 @@ msgstr "Sen resaltar"
 msgid "Batch"
 msgstr "Batch"
 
-msgid "Lua"
-msgstr "Lua"
-
 #, c-format
 msgid "Portable Object"
 msgstr "Obxecto Portable"
@@ -4079,10 +4173,6 @@ msgstr "Recursos"
 #, c-format
 msgid "Shell"
 msgstr "Shell"
-
-#, c-format
-msgid "VHDL"
-msgstr "VHDL"
 
 #, c-format
 msgid "Close &Left Tabs"
@@ -4246,5 +4336,36 @@ msgstr "Páx: %d/%d  Zoom: %d%%  %dx%dpx  %dbpp"
 
 #, c-format
 msgid "Rc: (%d, %d)  "
-msgstr ""
+msgstr "Rc: (%d, %d)  "
+
+msgid "<Edit here>"
+msgstr "<Editar aquí>"
+
+msgid "No differences to select found"
+msgstr "Non se atoparon deferenzas que seleccionar"
+
+msgid "No differences found to add as substitution filter"
+msgstr "Non se atoparon deferenzas para engadir como filtro de substitución"
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr "Esta parella xa está presente na lista de Filtros de substitución"
+
+msgid "Add this change to Substitution Filters?"
+msgstr "Engadir este cambio aos Filtros de substitución?"
+
+msgid "Text only"
+msgstr "Só texto"
+
+msgid "Line-by-line position and text"
+msgstr "Posición e texto liña a liña"
+
+msgid "Word-by-word position and text"
+msgstr "Posición e texto palabra a palabra"
+
+#, c-format
+msgid "Allow only one instance to run"
+msgstr "Permitir executar só unha instancia"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
+msgstr "Permitir só a execución dunha instancia e esperar a que a instancia remate"
 

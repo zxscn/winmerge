@@ -42,8 +42,23 @@ msgstr "Kopioi &vasemmalta"
 msgid "Copy fro&m Right"
 msgstr "Kopioi &oikealta"
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "Valitse riviero\tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr ""
 
 #, c-format
 msgid "&Undo"
@@ -188,6 +203,9 @@ msgstr "A&seta taustaväri"
 msgid "&Vector Image Scaling"
 msgstr ""
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 #, c-format
 msgid "&File"
 msgstr "Tiedosto"
@@ -199,6 +217,9 @@ msgstr "Uusi"
 #, c-format
 msgid "&Text"
 msgstr "&Teksti"
+
+msgid "T&able"
+msgstr ""
 
 #, c-format
 msgid "&Binary"
@@ -478,6 +499,15 @@ msgstr "Käytä oletusfonttia"
 msgid "Sw&ap Panes"
 msgstr "Vaihda ruudut"
 
+msgid "Swap &1st | 2nd"
+msgstr "Vaihda &1. | toinen"
+
+msgid "Swap &2nd | 3rd"
+msgstr "Vaihda &2. | kolmas"
+
+msgid "Swap 1st | &3rd"
+msgstr "Vaihda 1. | &kolmas"
+
 #, c-format
 msgid "Com&pare Statistics..."
 msgstr "Vertaa tilastoja..."
@@ -607,9 +637,6 @@ msgstr "Tiedoston koodaus..."
 msgid "Reco&mpare As"
 msgstr "Vertaa uudelleen"
 
-msgid "T&able"
-msgstr ""
-
 #, c-format
 msgid "&XML"
 msgstr "&XML"
@@ -716,6 +743,9 @@ msgstr "&9 riviä"
 #, c-format
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
 msgstr "&Vaihda kaikki ja 0-9 riviä\tCtrl+D"
+
+msgid "&Invert (Hide Different Lines)"
+msgstr ""
 
 #, c-format
 msgid "&Lock Panes"
@@ -1257,9 +1287,8 @@ msgstr "Sulje ikkuna 'Esc':llä:"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "Tarkista polut automaattisesti Avaa-valintaikkunassa"
 
-#, c-format
-msgid "All&ow only one instance to run"
-msgstr "Vain yksi instanssi kerrallaan"
+msgid "Single instance mode:"
+msgstr ""
 
 #, c-format
 msgid "As&k when closing multiple windows"
@@ -1328,7 +1357,8 @@ msgstr "Etsi seuraava"
 msgid "Find &Prev"
 msgstr "Etsi &edellinen"
 
-msgid "&OK"
+#, c-format
+msgid "&Ok"
 msgstr "OK"
 
 #, c-format
@@ -1383,16 +1413,11 @@ msgid "&Background color:"
 msgstr "&Taustaväri:"
 
 #, c-format
-msgid "&Ok"
-msgstr "OK"
-
-#, c-format
 msgid "&Apply"
 msgstr "Käytä"
 
-#, c-format
-msgid "Linefilters"
-msgstr "Rivisuodattimet"
+msgid "Line Filters"
+msgstr ""
 
 #, c-format
 msgid "Enable Line Filters"
@@ -1409,6 +1434,21 @@ msgstr "Muokkaa"
 #, c-format
 msgid "Remove"
 msgstr "Poista"
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
 
 #, c-format
 msgid "Colors"
@@ -1692,6 +1732,9 @@ msgstr "Ero&algoritmi (kokeellinen):"
 msgid "Enable indent &heuristic"
 msgstr "Ota käyttöön &heuristinen sisennys"
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 #, c-format
 msgid "Editor"
 msgstr "Muokkain"
@@ -1747,9 +1790,8 @@ msgstr "Sanakatk&on merkit:"
 msgid "&Rendering Mode:"
 msgstr ""
 
-#, c-format
-msgid "Filefilters"
-msgstr "Tiedostosuodattimet"
+msgid "File Filters"
+msgstr ""
 
 #, c-format
 msgid "Test..."
@@ -2314,6 +2356,9 @@ msgstr "Kuvatiedosto&mallit:"
 msgid "&Enable image compare in folder compare"
 msgstr ""
 
+msgid "OCR result:"
+msgstr ""
+
 #, c-format
 msgid "&Hex View"
 msgstr "&Hexanäkymä"
@@ -2494,12 +2539,12 @@ msgstr "Älä näytä tätä ilmoitusta uudestaan."
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr "Jos haluat, että tämä sanomaruutu on jälleen näkyvissä, paina Asetukset-ikkunan Yleiset-sivun Palauta-painiketta."
 
-msgid "Color Schemes"
-msgstr ""
-
 #, c-format
 msgid "Syntax"
 msgstr "Syntaksi"
+
+msgid "Color Schemes"
+msgstr ""
 
 msgid "Folder Compare"
 msgstr "Kansiovertailu"
@@ -2591,6 +2636,13 @@ msgstr "HTML-tiedostot (*.htm,*.html)|*.htm;*.html|Kaikki tiedostot (*.*)|*.*||"
 #, c-format
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "XML-tiedostot (*.xml)|*.xml|Kaikki tiedostot (*.*)|*.*||"
+
+msgid "File Type"
+msgstr ""
+
+#, c-format
+msgid "Extension"
+msgstr "Pääte"
 
 #, c-format
 msgid "Name"
@@ -2714,6 +2766,9 @@ msgstr "Nimetön keskimmäinen"
 msgid "Untitled right"
 msgstr "Nimetön oikea"
 
+msgid "Base File"
+msgstr ""
+
 #, c-format
 msgid "Theirs File"
 msgstr "Niiden tiedosto"
@@ -2721,6 +2776,9 @@ msgstr "Niiden tiedosto"
 #, c-format
 msgid "Mine File"
 msgstr "Minun tiedosto"
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2899,6 +2957,10 @@ msgstr ""
 "Alkuperäinen tiedosto jää koskemattomaksi.\n"
 "\n"
 "Haluatko tallentaa puretun version toiseen tiedostoon?"
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
 
 #, c-format
 msgid ""
@@ -3157,10 +3219,6 @@ msgstr "Oikea päiväys"
 #, c-format
 msgid "Middle Date"
 msgstr "Keskimmäinen päivä"
-
-#, c-format
-msgid "Extension"
-msgstr "Pääte"
 
 #, c-format
 msgid "Left Size"
@@ -3948,6 +4006,18 @@ msgstr ""
 "\n"
 "Yhdistä automaattisesti (Ctrl+Alt+M)"
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr "Mukautettua purkajaa käytetään molempiin tiedostoihin (vain yksi tiedosto tarvitsee päätteen)."
 
@@ -4025,9 +4095,6 @@ msgstr "Ei korostusta"
 msgid "Batch"
 msgstr "Erä"
 
-msgid "Lua"
-msgstr "Lua"
-
 #, c-format
 msgid "Portable Object"
 msgstr "Siirrettävä objekti"
@@ -4039,10 +4106,6 @@ msgstr "Resurssit"
 #, c-format
 msgid "Shell"
 msgstr "Shell"
-
-#, c-format
-msgid "VHDL"
-msgstr "VHDL"
 
 #, c-format
 msgid "Close &Left Tabs"
@@ -4206,5 +4269,36 @@ msgstr ""
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+#, c-format
+msgid "Allow only one instance to run"
+msgstr "Vain yksi instanssi kerrallaan"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

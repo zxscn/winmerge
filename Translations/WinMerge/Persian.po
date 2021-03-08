@@ -45,8 +45,23 @@ msgstr ""
 msgid "Copy fro&m Right"
 msgstr ""
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "&S انتخاب خط تفاوت \tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr ""
 
 #, c-format
 msgid "&Undo"
@@ -191,6 +206,9 @@ msgstr ""
 msgid "&Vector Image Scaling"
 msgstr ""
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 #, c-format
 msgid "&File"
 msgstr "&F پرونده "
@@ -201,6 +219,9 @@ msgstr "&N جديد \tCtl+N"
 
 #, c-format
 msgid "&Text"
+msgstr ""
+
+msgid "T&able"
 msgstr ""
 
 #, c-format
@@ -481,6 +502,15 @@ msgstr "&o استفاده از قلم پيش فرض "
 msgid "Sw&ap Panes"
 msgstr "&a تعويض چهارگوشها "
 
+msgid "Swap &1st | 2nd"
+msgstr ""
+
+msgid "Swap &2nd | 3rd"
+msgstr ""
+
+msgid "Swap 1st | &3rd"
+msgstr ""
+
 #, c-format
 msgid "Com&pare Statistics..."
 msgstr "&r مقايسه آمارها ... "
@@ -610,9 +640,6 @@ msgstr "&F کدبندي پرونده ... "
 msgid "Reco&mpare As"
 msgstr ""
 
-msgid "T&able"
-msgstr ""
-
 #, c-format
 msgid "&XML"
 msgstr "&XML"
@@ -719,6 +746,9 @@ msgstr ""
 
 #, c-format
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
+msgstr ""
+
+msgid "&Invert (Hide Different Lines)"
 msgstr ""
 
 #, c-format
@@ -1258,9 +1288,8 @@ msgstr "&o   'Esc' بستن پنجره ها با کليد :"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "&A بطور خودکار مسيرها در پنجره محاوره - باز کردن - وارسي شود "
 
-#, c-format
-msgid "All&ow only one instance to run"
-msgstr "&o اجازه اجراي همزمان تنها يک نسخه از نرم افزار  "
+msgid "Single instance mode:"
+msgstr ""
 
 #, c-format
 msgid "As&k when closing multiple windows"
@@ -1333,7 +1362,8 @@ msgstr "&F يافتن بعدي "
 msgid "Find &Prev"
 msgstr ""
 
-msgid "&OK"
+#, c-format
+msgid "&Ok"
 msgstr "&O تاييد "
 
 #, c-format
@@ -1388,16 +1418,11 @@ msgid "&Background color:"
 msgstr ""
 
 #, c-format
-msgid "&Ok"
-msgstr "&O تاييد "
-
-#, c-format
 msgid "&Apply"
 msgstr "&A به کار بستن "
 
-#, c-format
-msgid "Linefilters"
-msgstr " صافيهاي خط "
+msgid "Line Filters"
+msgstr ""
 
 #, c-format
 msgid "Enable Line Filters"
@@ -1414,6 +1439,21 @@ msgstr " ويرايش "
 #, c-format
 msgid "Remove"
 msgstr " برداشتن "
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
 
 #, c-format
 msgid "Colors"
@@ -1697,6 +1737,9 @@ msgstr ""
 msgid "Enable indent &heuristic"
 msgstr ""
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 #, c-format
 msgid "Editor"
 msgstr "  ويراستار  "
@@ -1752,9 +1795,8 @@ msgstr ""
 msgid "&Rendering Mode:"
 msgstr ""
 
-#, c-format
-msgid "Filefilters"
-msgstr " پرونده صافيها "
+msgid "File Filters"
+msgstr ""
 
 msgid "Test..."
 msgstr " آزمايش ..."
@@ -2316,6 +2358,9 @@ msgstr ""
 msgid "&Enable image compare in folder compare"
 msgstr ""
 
+msgid "OCR result:"
+msgstr ""
+
 #, c-format
 msgid "&Hex View"
 msgstr ""
@@ -2480,12 +2525,12 @@ msgstr "&m دوباره اين پيام را نمايش نده "
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr ""
 
-msgid "Color Schemes"
-msgstr ""
-
 #, c-format
 msgid "Syntax"
 msgstr "نحو"
+
+msgid "Color Schemes"
+msgstr ""
 
 msgid "Folder Compare"
 msgstr ""
@@ -2582,6 +2627,13 @@ msgstr ""
 #, c-format
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "XML  پرونده هاي  (*.xml)|*.xml|همه پرونده ها  (*.*)|*.*||"
+
+msgid "File Type"
+msgstr ""
+
+#, c-format
+msgid "Extension"
+msgstr " توسعه "
 
 #, c-format
 msgid "Name"
@@ -2706,6 +2758,9 @@ msgstr ""
 msgid "Untitled right"
 msgstr " راست بدون عنوان "
 
+msgid "Base File"
+msgstr ""
+
 #, c-format
 msgid "Theirs File"
 msgstr " پرونده ديگران "
@@ -2713,6 +2768,9 @@ msgstr " پرونده ديگران "
 #, c-format
 msgid "Mine File"
 msgstr " پرونده خودم "
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2900,6 +2958,10 @@ msgstr ""
 " پرونده اصلي تغيير نخواهد کرد \n"
 "\n"
 " آيا مي خواهيد که نسخه با بسته بازشده به صورت پرونده ديگري ذخيره شود؟ "
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
 
 #, c-format
 msgid ""
@@ -3159,10 +3221,6 @@ msgstr " تاريخ راست "
 #, c-format
 msgid "Middle Date"
 msgstr ""
-
-#, c-format
-msgid "Extension"
-msgstr " توسعه "
 
 #, c-format
 msgid "Left Size"
@@ -3899,6 +3957,18 @@ msgstr ""
 msgid "\nAuto Merge (Ctrl+Alt+M)"
 msgstr ""
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr " بازکننده بسته تطبيق داده شده روي هر دو پرونده ها بکار بسته مي شود "
 
@@ -3972,9 +4042,6 @@ msgstr " برجسته نکردن "
 msgid "Batch"
 msgstr " دسته "
 
-msgid "Lua"
-msgstr ""
-
 #, c-format
 msgid "Portable Object"
 msgstr " شيئ حمل شدني "
@@ -3986,10 +4053,6 @@ msgstr " منابع "
 #, c-format
 msgid "Shell"
 msgstr " پوسته "
-
-#, c-format
-msgid "VHDL"
-msgstr ""
 
 #, c-format
 msgid "Close &Left Tabs"
@@ -4147,5 +4210,36 @@ msgstr ""
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+#, c-format
+msgid "Allow only one instance to run"
+msgstr "اجازه اجراي همزمان تنها يک نسخه از نرم افزار  "
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

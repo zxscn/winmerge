@@ -45,8 +45,23 @@ msgstr ""
 msgid "Copy fro&m Right"
 msgstr ""
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "&Vælg linjeforskel\tF4""
+
+msgid "Add this change to Substitution &Filters"
+msgstr ""
 
 #, c-format
 msgid "&Undo"
@@ -191,6 +206,9 @@ msgstr ""
 msgid "&Vector Image Scaling"
 msgstr ""
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 #, c-format
 msgid "&File"
 msgstr "&Filer"
@@ -201,6 +219,9 @@ msgstr "&Ny"
 
 #, c-format
 msgid "&Text"
+msgstr ""
+
+msgid "T&able"
 msgstr ""
 
 #, c-format
@@ -481,6 +502,15 @@ msgstr "Brug standard s&krifttype"
 msgid "Sw&ap Panes"
 msgstr "By&t vinduer"
 
+msgid "Swap &1st | 2nd"
+msgstr ""
+
+msgid "Swap &2nd | 3rd"
+msgstr ""
+
+msgid "Swap 1st | &3rd"
+msgstr ""
+
 #, c-format
 msgid "Com&pare Statistics..."
 msgstr "Sammen&ligningsstatistikker..."
@@ -610,9 +640,6 @@ msgstr "&Fil Kodning..."
 msgid "Reco&mpare As"
 msgstr ""
 
-msgid "T&able"
-msgstr ""
-
 #, c-format
 msgid "&XML"
 msgstr "&XML"
@@ -719,6 +746,9 @@ msgstr ""
 
 #, c-format
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
+msgstr ""
+
+msgid "&Invert (Hide Different Lines)"
 msgstr ""
 
 #, c-format
@@ -1258,9 +1288,8 @@ msgstr "L&uk vinduer med 'Esc' tasten:"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "&Verificer automatisk stinavnene i åben dialogen"
 
-#, c-format
-msgid "All&ow only one instance to run"
-msgstr "Til&lad kun et eksempel ad gangen"
+msgid "Single instance mode:"
+msgstr ""
 
 #, c-format
 msgid "As&k when closing multiple windows"
@@ -1331,7 +1360,8 @@ msgstr "&Find næste"
 msgid "Find &Prev"
 msgstr ""
 
-msgid "&OK"
+#, c-format
+msgid "&Ok"
 msgstr "&OK"
 
 #, c-format
@@ -1386,16 +1416,11 @@ msgid "&Background color:"
 msgstr ""
 
 #, c-format
-msgid "&Ok"
-msgstr "&OK"
-
-#, c-format
 msgid "&Apply"
 msgstr "&Anvend"
 
-#, c-format
-msgid "Linefilters"
-msgstr "Linjefiltre"
+msgid "Line Filters"
+msgstr ""
 
 #, c-format
 msgid "Enable Line Filters"
@@ -1412,6 +1437,21 @@ msgstr "Rediger"
 #, c-format
 msgid "Remove"
 msgstr "Fjern"
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
 
 #, c-format
 msgid "Colors"
@@ -1695,6 +1735,9 @@ msgstr ""
 msgid "Enable indent &heuristic"
 msgstr ""
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 #, c-format
 msgid "Editor"
 msgstr "Redigering"
@@ -1750,9 +1793,8 @@ msgstr ""
 msgid "&Rendering Mode:"
 msgstr ""
 
-#, c-format
-msgid "Filefilters"
-msgstr "Filfiltre"
+msgid "File Filters"
+msgstr ""
 
 msgid "Test..."
 msgstr "Test..."
@@ -2314,6 +2356,9 @@ msgstr ""
 msgid "&Enable image compare in folder compare"
 msgstr ""
 
+msgid "OCR result:"
+msgstr ""
+
 #, c-format
 msgid "&Hex View"
 msgstr ""
@@ -2479,12 +2524,12 @@ msgstr "Vis ikke denne &besked igen."
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr ""
 
-msgid "Color Schemes"
-msgstr ""
-
 #, c-format
 msgid "Syntax"
 msgstr "Syntaks"
+
+msgid "Color Schemes"
+msgstr ""
 
 msgid "Folder Compare"
 msgstr ""
@@ -2580,6 +2625,13 @@ msgstr "HTML Filer (*.htm,*.html)|*.htm;*.html|Alle filer (*.*)|*.*||"
 #, c-format
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "XML Filer (*.xml)|*.xml|Alle filer (*.*)|*.*||"
+
+msgid "File Type"
+msgstr ""
+
+#, c-format
+msgid "Extension"
+msgstr "Udvidelse"
 
 #, c-format
 msgid "Name"
@@ -2703,6 +2755,9 @@ msgstr ""
 msgid "Untitled right"
 msgstr "Ikke navngivet højre"
 
+msgid "Base File"
+msgstr ""
+
 #, c-format
 msgid "Theirs File"
 msgstr "Deres fil"
@@ -2710,6 +2765,9 @@ msgstr "Deres fil"
 #, c-format
 msgid "Mine File"
 msgstr "Min fil"
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2897,6 +2955,10 @@ msgstr ""
 "Den originale fil vil ikke blive ændret.\n"
 "\n"
 "Vil du gemme den udpakkede version under et andet filnavn?"
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
 
 #, c-format
 msgid ""
@@ -3157,10 +3219,6 @@ msgstr "Højre dato"
 #, c-format
 msgid "Middle Date"
 msgstr ""
-
-#, c-format
-msgid "Extension"
-msgstr "Udvidelse"
 
 #, c-format
 msgid "Left Size"
@@ -3893,6 +3951,18 @@ msgstr ""
 msgid "\nAuto Merge (Ctrl+Alt+M)"
 msgstr ""
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr ""
 "Udpakkeren bruges på begge filer (kun den ene fil behøves en korrekt "
@@ -3968,9 +4038,6 @@ msgstr "Ingen fremhævning"
 msgid "Batch"
 msgstr "Batch"
 
-msgid "Lua"
-msgstr ""
-
 #, c-format
 msgid "Portable Object"
 msgstr "Transportabelt Objekt"
@@ -3982,10 +4049,6 @@ msgstr "Resourser"
 #, c-format
 msgid "Shell"
 msgstr "Shell"
-
-#, c-format
-msgid "VHDL"
-msgstr ""
 
 #, c-format
 msgid "Close &Left Tabs"
@@ -4143,5 +4206,36 @@ msgstr ""
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+#, c-format
+msgid "Allow only one instance to run"
+msgstr "Tillad kun et eksempel ad gangen"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

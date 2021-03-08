@@ -70,6 +70,7 @@ typedef enum
 {
 	SRC_PLAIN,
 	SRC_ASP,
+	SRC_AUTOIT,
 	SRC_BASIC,
 	SRC_BATCH,
 	SRC_C,
@@ -83,6 +84,8 @@ typedef enum
 	SRC_INNOSETUP,
 	SRC_INSTALLSHIELD,
 	SRC_JAVA,
+	SRC_JAVASCRIPT,
+	SRC_JSON,
 	SRC_LISP,
 	SRC_LUA,
 	SRC_NSIS,
@@ -125,7 +128,7 @@ struct TextDefinition
 	unsigned encoding;
 };
 
-extern TextDefinition m_SourceDefs[37];
+extern TextDefinition m_SourceDefs[40];
 
 bool IsXKeyword(const TCHAR *pszKey, size_t nKeyLen, const TCHAR *pszKeywordList[], size_t nKeywordListCount, int(*compare)(const TCHAR *, const TCHAR *, size_t));
 bool IsXNumber(const TCHAR* pszChars, int nLength);
@@ -134,12 +137,16 @@ bool IsHtmlUser1Keyword(const TCHAR *pszChars, int nLength);
 bool IsHtmlUser2Keyword(const TCHAR *pszChars, int nLength);
 
 TextDefinition *GetTextType(const TCHAR *pszExt);
+TextDefinition* GetTextType(int index);
+void SetExtension(int index, const TCHAR *pszExts);
 
 unsigned ParseLinePlain(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineAsp(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
+unsigned ParseLineAutoIt(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineBasic(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineBatch(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineC(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
+unsigned ParseLineCJava(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems, bool (*IsKeyword)(const TCHAR *pszChars, int nLength), bool (*IsUser1Keyword)(const TCHAR *pszChars, int nLength));
 unsigned ParseLineCSharp(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineCss(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineDcl(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
@@ -151,6 +158,7 @@ unsigned ParseLineIni(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEX
 unsigned ParseLineInnoSetup(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineIS(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineJava(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
+unsigned ParseLineJavaScript(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineLisp(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineLua(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);
 unsigned ParseLineNsis(unsigned dwCookie, const TCHAR *pszChars, int nLength, TEXTBLOCK * pBuf, int &nActualItems);

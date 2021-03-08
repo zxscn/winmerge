@@ -38,8 +38,23 @@ msgstr "So&ldan Kopyala"
 msgid "Copy fro&m Right"
 msgstr "Sağ&dan Kopyala"
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
 msgstr "Farklı &Satırları Seç\tF4"
+
+msgid "Add this change to Substitution &Filters"
+msgstr ""
 
 msgid "&Undo"
 msgstr "Geri A&l"
@@ -160,6 +175,9 @@ msgstr "Ar&ka Plan Rengini Ayarla"
 msgid "&Vector Image Scaling"
 msgstr "&Vektör Görsel Ölçekleme"
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 msgid "&File"
 msgstr "&Dosya"
 
@@ -168,6 +186,9 @@ msgstr "Ye&ni"
 
 msgid "&Text"
 msgstr "Me&tin"
+
+msgid "T&able"
+msgstr "T&ablo"
 
 msgid "&Binary"
 msgstr "&Binary"
@@ -382,6 +403,15 @@ msgstr "Varsayılan Yazı &Türü Kullanılsın"
 msgid "Sw&ap Panes"
 msgstr "&Panoların Yerini Değiştir"
 
+msgid "Swap &1st | 2nd"
+msgstr "&1. ile 2. Ögeyi Değiştir"
+
+msgid "Swap &2nd | 3rd"
+msgstr "&2. ile 3. Ögeyi Değiştir"
+
+msgid "Swap 1st | &3rd"
+msgstr "1. ile &3. Ögeyi Değiştir"
+
 msgid "Com&pare Statistics..."
 msgstr "Karşılaştırma İstatistikleri..."
 
@@ -481,9 +511,6 @@ msgstr "&Dosya Kodlaması..."
 msgid "Reco&mpare As"
 msgstr "&Farklı Karşılaştır"
 
-msgid "T&able"
-msgstr "T&ablo"
-
 msgid "&XML"
 msgstr "&XML"
 
@@ -564,6 +591,9 @@ msgstr "&9 Satır"
 
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
 msgstr "&Tümünü ve 0-9 Satırları Değiştir\tCtrl+D"
+
+msgid "&Invert (Hide Different Lines)"
+msgstr ""
 
 msgid "&Lock Panes"
 msgstr "Pano&lar Kilitlensin"
@@ -993,8 +1023,8 @@ msgstr "'Esc' tuşu pencereleri &kapatsın:"
 msgid "&Automatically verify paths in Open-dialog"
 msgstr "'&Aç' penceresindeki yollar doğrulansın"
 
-msgid "All&ow only one instance to run"
-msgstr "Yalnız bir &WinMerge kopyası çalışsın"
+msgid "Single instance mode:"
+msgstr ""
 
 msgid "As&k when closing multiple windows"
 msgstr "&Birden fazla pencere kapatılıyorsa onay istensin"
@@ -1049,7 +1079,7 @@ msgstr "S&onrakini Bul"
 msgid "Find &Prev"
 msgstr "Ö&ncekini Bul"
 
-msgid "&OK"
+msgid "&Ok"
 msgstr "&Tamam"
 
 msgid "Replace"
@@ -1091,14 +1121,11 @@ msgstr "Yeni"
 msgid "&Background color:"
 msgstr "A&rka plan rengi:"
 
-msgid "&Ok"
-msgstr "&Tamam"
-
 msgid "&Apply"
 msgstr "&Uygula"
 
-msgid "Linefilters"
-msgstr "Satır Süzgeçleri"
+msgid "Line Filters"
+msgstr ""
 
 msgid "Enable Line Filters"
 msgstr "Satır süzgeçleri kullanılsın"
@@ -1111,6 +1138,21 @@ msgstr "Düzenle"
 
 msgid "Remove"
 msgstr "Sil"
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
 
 msgid "Colors"
 msgstr "Renkler"
@@ -1334,6 +1376,9 @@ msgstr "&Fark algortiması (Deneysel):"
 msgid "Enable indent &heuristic"
 msgstr "&Sezgisel girinti kullanılsın"
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 msgid "Editor"
 msgstr "Düzenleyici"
 
@@ -1376,8 +1421,8 @@ msgstr "&Sözcük kesme karakterleri:"
 msgid "&Rendering Mode:"
 msgstr "Gö&rüntüleme Kipi:"
 
-msgid "Filefilters"
-msgstr "Dosya Süzgeçleri"
+msgid "File Filters"
+msgstr ""
 
 msgid "Test..."
 msgstr "Sına..."
@@ -1826,6 +1871,9 @@ msgstr "Görsel dosya &uzantıları:"
 msgid "&Enable image compare in folder compare"
 msgstr "Klasör karşılaştırmasında görs&el karşılaştırması yapılsın"
 
+msgid "OCR result:"
+msgstr ""
+
 msgid "&Hex View"
 msgstr "Onaltılık &Görünüm"
 
@@ -1987,11 +2035,11 @@ msgstr ""
 "Bu ileti kutusunun yeniden görüntülenmesi için Ayarlar bölümündeki Genel "
 "Grubu altındaki Sıfırla düğmesine tıklayın."
 
-msgid "Color Schemes"
-msgstr "Renk Temaları"
-
 msgid "Syntax"
 msgstr "Söz Dizimi"
+
+msgid "Color Schemes"
+msgstr "Renk Temaları"
 
 msgid "Folder Compare"
 msgstr "Klasör Karşılaştırma"
@@ -2071,6 +2119,12 @@ msgstr "HTML Dosyaları (*.htm,*.html)|*.htm;*.html|Tüm Dosyalar (*.*)|*.*||"
 
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr "XML Dosyaları (*.xml)|*.xml|Tüm Dosyalar (*.*)|*.*||"
+
+msgid "File Type"
+msgstr ""
+
+msgid "Extension"
+msgstr "Uzantı"
 
 msgid "Name"
 msgstr "Ad"
@@ -2179,11 +2233,17 @@ msgstr "Orta adsız"
 msgid "Untitled right"
 msgstr "Sağ adsız"
 
+msgid "Base File"
+msgstr ""
+
 msgid "Theirs File"
 msgstr "Başkalarının Dosyası"
 
 msgid "Mine File"
 msgstr "Benim Dosyam"
+
+msgid "Original File"
+msgstr ""
 
 #, c-format
 msgid "Ln: %s  Col: %d/%d  Ch: %d/%d  EOL: %s"
@@ -2364,6 +2424,10 @@ msgstr ""
 "Özgün dosya değiştirilmeyecek.\n"
 "\n"
 "Ayıklanmış sürümü başka bir dosyaya kaydetmek ister misiniz?"
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
 
 #, c-format
 msgid ""
@@ -2612,9 +2676,6 @@ msgstr "Sağ Dosya Tarihi"
 
 msgid "Middle Date"
 msgstr "Orta Dosya Tarihi"
-
-msgid "Extension"
-msgstr "Uzantı"
 
 msgid "Left Size"
 msgstr "Sol Dosya Boyutu"
@@ -3289,6 +3350,18 @@ msgstr ""
 "\n"
 "Otomatik Karşılaştır (Ctrl+Alt+M)"
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr ""
 "Uyarlanan ayıklayıcı iki dosyaya da uygulandı (yalnız bir dosya bu eklentiye "
@@ -3355,9 +3428,6 @@ msgstr "Vurgulama Yok"
 msgid "Batch"
 msgstr "Toplu İşlem"
 
-msgid "Lua"
-msgstr "Lua"
-
 msgid "Portable Object"
 msgstr "Taşınabilir Nesne"
 
@@ -3366,9 +3436,6 @@ msgstr "Kaynaklar"
 
 msgid "Shell"
 msgstr "Kabuk"
-
-msgid "VHDL"
-msgstr "VHDL"
 
 msgid "Close &Left Tabs"
 msgstr "So&ldaki Sekmeleri Kapat"
@@ -3526,5 +3593,35 @@ msgstr "Sayfa: %d/%d  Yakınlaştırma: %d%%  %dx%dpiksel  %dbpp"
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+msgid "Allow only one instance to run"
+msgstr "Yalnız bir WinMerge kopyası çalışsın"
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 

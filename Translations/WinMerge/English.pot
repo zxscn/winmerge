@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinMerge\n"
 "Report-Msgid-Bugs-To: https://bugs.winmerge.org/\n"
-"POT-Creation-Date: 2020-12-28 19:49+0000\n"
+"POT-Creation-Date: 2021-02-28 11:53+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: English <winmerge-translate@lists.sourceforge.net>\n"
@@ -32,7 +32,22 @@ msgstr ""
 msgid "Copy fro&m Right"
 msgstr ""
 
+msgid "Copy Selected Line(s) to Right"
+msgstr ""
+
+msgid "Copy Selected Line(s) to Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Left"
+msgstr ""
+
+msgid "Copy Selected Line(s) from Right"
+msgstr ""
+
 msgid "&Select Line Difference\tF4"
+msgstr ""
+
+msgid "Add this change to Substitution &Filters"
 msgstr ""
 
 msgid "&Undo"
@@ -154,6 +169,9 @@ msgstr ""
 msgid "&Vector Image Scaling"
 msgstr ""
 
+msgid "Compare Extracted &Text From Image"
+msgstr ""
+
 msgid "&File"
 msgstr ""
 
@@ -161,6 +179,9 @@ msgid "&New"
 msgstr ""
 
 msgid "&Text"
+msgstr ""
+
+msgid "T&able"
 msgstr ""
 
 msgid "&Binary"
@@ -376,6 +397,15 @@ msgstr ""
 msgid "Sw&ap Panes"
 msgstr ""
 
+msgid "Swap &1st | 2nd"
+msgstr ""
+
+msgid "Swap &2nd | 3rd"
+msgstr ""
+
+msgid "Swap 1st | &3rd"
+msgstr ""
+
 msgid "Com&pare Statistics..."
 msgstr ""
 
@@ -475,9 +505,6 @@ msgstr ""
 msgid "Reco&mpare As"
 msgstr ""
 
-msgid "T&able"
-msgstr ""
-
 msgid "&XML"
 msgstr ""
 
@@ -557,6 +584,9 @@ msgid "&9 Lines"
 msgstr ""
 
 msgid "&Toggle All and 0-9 Lines\tCtrl+D"
+msgstr ""
+
+msgid "&Invert (Hide Different Lines)"
 msgstr ""
 
 msgid "&Lock Panes"
@@ -987,7 +1017,7 @@ msgstr ""
 msgid "&Automatically verify paths in Open-dialog"
 msgstr ""
 
-msgid "All&ow only one instance to run"
+msgid "Single instance mode:"
 msgstr ""
 
 msgid "As&k when closing multiple windows"
@@ -1041,7 +1071,7 @@ msgstr ""
 msgid "Find &Prev"
 msgstr ""
 
-msgid "&OK"
+msgid "&Ok"
 msgstr ""
 
 msgid "Replace"
@@ -1083,13 +1113,10 @@ msgstr ""
 msgid "&Background color:"
 msgstr ""
 
-msgid "&Ok"
-msgstr ""
-
 msgid "&Apply"
 msgstr ""
 
-msgid "Linefilters"
+msgid "Line Filters"
 msgstr ""
 
 msgid "Enable Line Filters"
@@ -1102,6 +1129,21 @@ msgid "Edit"
 msgstr ""
 
 msgid "Remove"
+msgstr ""
+
+msgid "Substitution Filters"
+msgstr ""
+
+msgid "The changes that appear on the panels as the listed pairs below will be ignored or marked as insignificant. Patches are unaffected."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Clear"
 msgstr ""
 
 msgid "Colors"
@@ -1326,6 +1368,9 @@ msgstr ""
 msgid "Enable indent &heuristic"
 msgstr ""
 
+msgid "Completely unhighlight the ignored differences"
+msgstr ""
+
 msgid "Editor"
 msgstr ""
 
@@ -1368,7 +1413,7 @@ msgstr ""
 msgid "&Rendering Mode:"
 msgstr ""
 
-msgid "Filefilters"
+msgid "File Filters"
 msgstr ""
 
 msgid "Test..."
@@ -1808,6 +1853,9 @@ msgstr ""
 msgid "&Enable image compare in folder compare"
 msgstr ""
 
+msgid "OCR result:"
+msgstr ""
+
 msgid "&Hex View"
 msgstr ""
 
@@ -1907,10 +1955,10 @@ msgstr ""
 msgid "To make this message box visible again, press the Reset button on the General page of the Options dialog."
 msgstr ""
 
-msgid "Color Schemes"
+msgid "Syntax"
 msgstr ""
 
-msgid "Syntax"
+msgid "Color Schemes"
 msgstr ""
 
 msgid "Folder Compare"
@@ -1982,6 +2030,12 @@ msgstr ""
 msgid "XML Files (*.xml)|*.xml|All Files (*.*)|*.*||"
 msgstr ""
 
+msgid "File Type"
+msgstr ""
+
+msgid "Extension"
+msgstr ""
+
 msgid "Name"
 msgstr ""
 
@@ -2048,10 +2102,16 @@ msgstr ""
 msgid "Untitled right"
 msgstr ""
 
+msgid "Base File"
+msgstr ""
+
 msgid "Theirs File"
 msgstr ""
 
 msgid "Mine File"
+msgstr ""
+
+msgid "Original File"
 msgstr ""
 
 #, c-format
@@ -2180,6 +2240,10 @@ msgstr ""
 
 #, c-format
 msgid "Plugin '%2' cannot pack your changes to the left file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
+msgstr ""
+
+#, c-format
+msgid "Plugin '%2' cannot pack your changes to the middle file back into '%1'.\n\nThe original file will not be changed.\n\nDo you want to save the unpacked version to another file?"
 msgstr ""
 
 #, c-format
@@ -2357,9 +2421,6 @@ msgid "Right Date"
 msgstr ""
 
 msgid "Middle Date"
-msgstr ""
-
-msgid "Extension"
 msgstr ""
 
 msgid "Left Size"
@@ -2903,6 +2964,18 @@ msgstr ""
 msgid "\nAuto Merge (Ctrl+Alt+M)"
 msgstr ""
 
+msgid "\nFirst File"
+msgstr ""
+
+msgid "\nNext File"
+msgstr ""
+
+msgid "\nLast File"
+msgstr ""
+
+msgid "\nPrevious File"
+msgstr ""
+
 msgid "The adapted unpacker is applied to both files (one file only needs the extension)."
 msgstr ""
 
@@ -2963,9 +3036,6 @@ msgstr ""
 msgid "Batch"
 msgstr ""
 
-msgid "Lua"
-msgstr ""
-
 msgid "Portable Object"
 msgstr ""
 
@@ -2973,9 +3043,6 @@ msgid "Resources"
 msgstr ""
 
 msgid "Shell"
-msgstr ""
-
-msgid "VHDL"
 msgstr ""
 
 msgid "Close &Left Tabs"
@@ -3128,5 +3195,35 @@ msgstr ""
 
 #, c-format
 msgid "Rc: (%d, %d)  "
+msgstr ""
+
+msgid "<Edit here>"
+msgstr ""
+
+msgid "No differences to select found"
+msgstr ""
+
+msgid "No differences found to add as substitution filter"
+msgstr ""
+
+msgid "The pair is already present in the list of Substitution Filters"
+msgstr ""
+
+msgid "Add this change to Substitution Filters?"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "Line-by-line position and text"
+msgstr ""
+
+msgid "Word-by-word position and text"
+msgstr ""
+
+msgid "Allow only one instance to run"
+msgstr ""
+
+msgid "Allow only one instance to run and wait for the instance to terminate"
 msgstr ""
 
